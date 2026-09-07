@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Globe, Award, FileText, Image as ImageIcon, CreditCard, User, MapPin, Sparkles, Phone, Facebook, Youtube, ChevronDown, Lock } from 'lucide-react';
+import { Globe, Award, FileText, Image as ImageIcon, CreditCard, User, MapPin, Sparkles, Phone, Facebook, Youtube, ChevronDown } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 interface NavbarProps {
   currentLang: 'en' | 'bn';
@@ -18,28 +19,29 @@ export const Navbar: React.FC<NavbarProps> = ({
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const { t } = useLanguage();
 
   const defaultTickerText = marqueeText || 
     "Admission Open for Classes V to XI (Session 2026-27) | WBBSE & WBCHSE 2nd Unit Test Schedule Published | Kanyashree K1 & K2 Verification Desk Active";
 
   return (
     <>
-      {/* 1. Top Utility Ribbon (Dark Forest Green Strip #0F2E23) */}
+      {/* 1. Top Utility Ribbon */}
       <div className="bg-[#0F2E23] text-white py-1.5 px-4 text-[11px] border-b border-emerald-900/60 font-sans">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
           
           <div className="flex items-center gap-2 overflow-hidden text-slate-200">
             <span className="bg-rose-700 text-white font-extrabold px-2 py-0.5 rounded text-[10px] uppercase tracking-wider shrink-0 animate-pulse">
-              UPDATES
+              {t('nav.updates')}
             </span>
             <span className="truncate font-semibold">
-              Welcome to Mahishadal Gayeswari Girls' High School (H.S.) • Estd 1945 • WBBSE & WBCHSE Recognized • UDISE: 19190806002
+              {t('nav.welcome')}
             </span>
           </div>
 
           <div className="flex items-center gap-3 shrink-0 text-slate-300 font-medium">
             <span className="hidden md:inline italic text-amber-300 font-serif">
-              Excellence in Female Education & Empowerment
+              {t('nav.excellence')}
             </span>
             <div className="flex items-center gap-2 border-l border-emerald-800 pl-3">
               <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hover:text-amber-400 transition-colors" title="Facebook Page">
@@ -48,15 +50,6 @@ export const Navbar: React.FC<NavbarProps> = ({
               <a href="https://youtube.com" target="_blank" rel="noreferrer" className="hover:text-amber-400 transition-colors" title="YouTube Channel">
                 <Youtube className="w-3.5 h-3.5" />
               </a>
-              <span className="h-3 w-[1px] bg-emerald-800"></span>
-              <button 
-                onClick={onOpenAdminLoginModal} 
-                className="hover:text-amber-300 transition-colors font-bold text-[10px] uppercase border border-amber-500/40 px-2 py-0.5 rounded bg-emerald-950/80 flex items-center gap-1 text-amber-200 cursor-pointer shadow-xs"
-                title="Admin Console Login"
-              >
-                <Lock className="w-3 h-3 text-amber-400" />
-                <span>Admin Login</span>
-              </button>
             </div>
           </div>
 
@@ -102,20 +95,18 @@ export const Navbar: React.FC<NavbarProps> = ({
 
             <div className="space-y-1">
               <h1 className="font-serif font-black text-xl sm:text-2xl lg:text-3xl text-slate-900 tracking-tight leading-none uppercase">
-                {currentLang === 'bn'
-                  ? 'মহিষাদল গায়েশ্বরী বালিকা উচ্চ বিদ্যালয় (উঃ মাঃ)'
-                  : "MAHISHADAL GAYESWARI GIRLS' HIGH SCHOOL (H.S.)"}
+                {t('nav.schoolName')}
               </h1>
               <p className="text-xs text-slate-700 italic font-medium">
-                (Government Sponsored Girls' Higher Secondary School)
+                {t('nav.schoolType')}
               </p>
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 text-[11px] font-bold text-[#881337] pt-0.5">
-                <span className="flex items-center gap-1 text-amber-700">★ Recognized by WBBSE & WBCHSE</span>
-                <span>• Banglar Shiksha ID: WB-1945-MGGHS</span>
+                <span className="flex items-center gap-1 text-amber-700">{t('nav.recognized')}</span>
+                <span>• {t('nav.banglarId')}</span>
               </div>
               <p className="text-[11px] text-slate-600 font-semibold flex items-center justify-center sm:justify-start gap-1">
                 <MapPin className="w-3.5 h-3.5 text-rose-700 shrink-0" />
-                <span>GARKAMALPUR • MAHISHADAL • PURBA MEDINIPUR - 721628</span>
+                <span>{t('nav.address')}</span>
               </p>
             </div>
           </div>
@@ -141,8 +132,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             >
               <CreditCard className="w-4 h-4 text-amber-300" />
               <div className="text-left leading-none">
-                <span className="block text-[11px]">FEES & SCHOLARSHIPS</span>
-                <span className="text-[9px] text-amber-200 font-normal">GOVT WELFARE DESK</span>
+                <span className="block text-[11px]">{t('nav.fees')}</span>
+                <span className="text-[9px] text-amber-200 font-normal">{t('nav.feesSubtitle')}</span>
               </div>
             </a>
 
@@ -152,8 +143,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             >
               <User className="w-4 h-4 text-amber-300" />
               <div className="text-left leading-none">
-                <span className="block text-[11px]">STUDENT ADMISSION 2026</span>
-                <span className="text-[9px] text-emerald-200 font-normal">ONLINE INQUIRY PORTAL →</span>
+                <span className="block text-[11px]">{t('nav.admission')}</span>
+                <span className="text-[9px] text-emerald-200 font-normal">{t('nav.admissionSubtitle')}</span>
               </div>
             </button>
 
@@ -309,7 +300,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Mobile Menu Toggle Button */}
           <div className="lg:hidden py-3 flex items-center justify-between w-full">
             <span className="font-extrabold text-xs tracking-wider text-amber-300 uppercase">
-              MGGHS SCHOOL PORTAL
+              {t('nav.portal')}
             </span>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -341,7 +332,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               }}
               className="w-full bg-rose-700 hover:bg-rose-800 text-white font-bold py-2.5 rounded-lg text-xs mt-2 transition-colors cursor-pointer"
             >
-              ONLINE ADMISSION INQUIRY 2026
+              {t('nav.admissionBtn')}
             </button>
           </div>
         )}

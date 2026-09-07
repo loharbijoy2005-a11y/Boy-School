@@ -1,11 +1,13 @@
 import React from 'react';
 import { MapPin, Phone, Mail, ExternalLink, ShieldCheck, Lock, Award, Heart } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 interface FooterProps {
   onOpenAdminLoginModal: () => void;
 }
 
 export const Footer: React.FC<FooterProps> = ({ onOpenAdminLoginModal }) => {
+  const { t } = useLanguage();
   return (
     <footer className="bg-[#0F172A] text-slate-300 py-16 border-t border-slate-800 font-sans">
       <div className="max-w-7xl mx-auto px-4 space-y-12">
@@ -22,14 +24,14 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAdminLoginModal }) => {
               </h3>
             </div>
             <p className="text-xs leading-relaxed text-slate-400">
-              Pioneer government-sponsored girls' high school in Purba Medinipur, West Bengal since 1945. Affiliated to WBBSE & WBCHSE.
+              {t('footer.about')}
             </p>
           </div>
 
           {/* Quick Navigation */}
           <div>
             <h4 className="font-bold text-white text-xs uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">
-              Quick Navigation
+              {t('footer.quickNav')}
             </h4>
             <ul className="space-y-2 text-xs font-medium text-slate-400">
               <li><a href="#home" className="hover:text-amber-400 transition-colors">Home Page</a></li>
@@ -43,7 +45,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAdminLoginModal }) => {
           {/* State Govt & Board Portals */}
           <div>
             <h4 className="font-bold text-white text-xs uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">
-              State Board Portals
+              {t('footer.boardPortals')}
             </h4>
             <ul className="space-y-2 text-xs font-medium text-slate-400">
               <li>
@@ -76,7 +78,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAdminLoginModal }) => {
           {/* Contact Info */}
           <div>
             <h4 className="font-bold text-white text-xs uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">
-              School Campus Address
+              {t('footer.address')}
             </h4>
             <ul className="space-y-3 text-xs text-slate-400">
               <li className="flex items-start gap-2">
@@ -101,9 +103,9 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAdminLoginModal }) => {
           <div>
             <h4 className="text-white font-bold text-sm flex items-center gap-2">
               <ShieldCheck className="w-4 h-4 text-rose-500" />
-              Authenticated Institutional Control Console
+              {t('footer.adminConsole')}
             </h4>
-            <p className="text-xs text-slate-400">Headmistress, SMC Governing Body, & Clerical Office Staff Login.</p>
+            <p className="text-xs text-slate-400">{t('footer.adminDesc')}</p>
           </div>
 
           <div className="flex items-center gap-3">
@@ -112,7 +114,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAdminLoginModal }) => {
               className="bg-[#701A1E] hover:bg-[#501215] text-white border border-[#C58B24]/60 hover:border-[#C58B24] font-extrabold px-5 py-2.5 rounded-xl text-xs flex items-center gap-2 shadow-lg transition-all"
             >
               <ShieldCheck className="w-4 h-4 text-amber-300" />
-              <span>ADMIN LOG IN</span>
+              <span>{t('footer.adminLogin')}</span>
             </button>
 
             <button
@@ -120,14 +122,14 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAdminLoginModal }) => {
               className="bg-[#C58B24] hover:bg-[#A36F1A] text-white border border-amber-300/60 hover:border-white font-extrabold px-5 py-2.5 rounded-xl text-xs flex items-center gap-2 transition-all shadow-lg"
             >
               <Lock className="w-4 h-4" />
-              <span>OFFICE LOG IN</span>
+              <span>{t('footer.officeLogin')}</span>
             </button>
           </div>
         </div>
 
         <div className="pt-6 border-t border-slate-800 flex flex-wrap justify-between items-center text-xs text-slate-500 gap-4">
-          <p>&copy; 2026 Mahishadal Gayeswari Girls' High School (H.S.). All Rights Reserved.</p>
-          <p>Banglar Shiksha ID: WB-1945-MGGHS | UDISE: 19190806002 | WBBSE: E1-042 | WBCHSE: 105084</p>
+          <p>{t('footer.copyright')}</p>
+          <p>{t('footer.ids')}</p>
         </div>
 
       </div>

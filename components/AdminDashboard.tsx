@@ -146,6 +146,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
   useEffect(() => {
     if (typeof window !== 'undefined') {
       localStorage.setItem('mgghs_gallery', JSON.stringify(galleryItems));
+      // Notify EventGallery component on the main site
+      window.dispatchEvent(new Event('mgghs_gallery_updated'));
     }
   }, [galleryItems]);
 
@@ -155,6 +157,23 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
   const [newPhotoTitle, setNewPhotoTitle] = useState('');
   const [newPhotoCategory, setNewPhotoCategory] = useState('Cultural');
   const [newPhotoUrl, setNewPhotoUrl] = useState('');
+  const [uploadedPreview, setUploadedPreview] = useState<string>('');
+  const [isUploading, setIsUploading] = useState(false);
+
+  // Handle real file upload from device gallery
+  const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    setIsUploading(true);
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      const base64 = ev.target?.result as string;
+      setUploadedPreview(base64);
+      setNewPhotoUrl(base64);
+      setIsUploading(false);
+    };
+    reader.readAsDataURL(file);
+  };
 
   // Staff Roster Form State
   const [staffCategoryFilter, setStaffCategoryFilter] = useState<StaffCategory | 'all'>('all');
@@ -627,41 +646,84 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
         {/* TAB 5: PHOTO GALLERY UPLOADER */}
         {activeTab === 'gallery' && (
           <div className="space-y-6">
-            <form onSubmit={handleAddPhotoSubmit} className="bg-white p-6 rounded-2xl border border-[#E8DFD0] space-y-4 shadow-xs text-xs">
-              <h3 className="font-serif font-bold text-base text-[#1E293B]">Upload / Add New Photo to Gallery</h3>
-              <div className="grid md:grid-cols-3 gap-4">
-                <input
-                  type="text"
-                  required
-                  placeholder="Photo Title (e.g. Sports Day 2026)"
-                  value={newPhotoTitle}
-                  onChange={(e) => setNewPhotoTitle(e.target.value)}
-                  className="w-full bg-[#FAF7F2] border border-[#E8DFD0] rounded-xl px-3 py-2 text-slate-900"
-                />
-                <select
-                  value={newPhotoCategory}
-                  onChange={(e) => setNewPhotoCategory(e.target.value)}
-                  className="w-full bg-[#FAF7F2] border border-[#E8DFD0] rounded-xl px-3 py-2 text-slate-900"
-                >
-                  <option value="Cultural">Cultural</option>
-                  <option value="Sports">Sports</option>
-                  <option value="Empowerment">Empowerment</option>
-                  <option value="Academics">Academics</option>
-                  <option value="Ceremony">Ceremony</option>
-                </select>
-                <input
-                  type="text"
-                  required
-                  placeholder="Image URL (/assets/... or https://...)"
-                  value={newPhotoUrl}
-                  onChange={(e) => setNewPhotoUrl(e.target.value)}
-                  className="w-full bg-[#FAF7F2] border border-[#E8DFD0] rounded-xl px-3 py-2 text-slate-900"
-                />
+            <form onSubmit={handleAddPhotoSubmit} className="bg-white p-6 rounded-2xl border border-[#E8DFD0] space-y-5 shadow-xs text-xs">
+              <div className="flex items-center gap-2 border-b border-[#E8DFD0] pb-4">
+                <Upload className="w-5 h-5 text-[#9D174D]" />
+                <h3 className="font-serif font-bold text-base text-[#1E293B]">Upload Photo to Website Gallery</h3>
               </div>
-              <button type="submit" className="bg-[#9D174D] text-white font-bold px-4 py-2 rounded-xl text-xs">
-                Upload to Gallery Reel
+
+              {/* FILE PICKER — works on mobile gallery too */}
+              <div>
+                <label className="block font-bold text-slate-700 uppercase mb-2 text-xs">
+                  📸 Select Photo from Device / Phone Gallery
+                </label>
+                <label className="flex flex-col items-center justify-center w-full h-36 border-2 border-dashed border-[#9D174D]/40 rounded-2xl bg-[#FAF7F2] hover:bg-rose-50 cursor-pointer transition-colors relative overflow-hidden">
+                  {uploadedPreview ? (
+                    <img src={uploadedPreview} alt="Preview" className="absolute inset-0 w-full h-full object-cover opacity-80 rounded-2xl" />
+                  ) : (
+                    <div className="flex flex-col items-center gap-2 text-slate-500">
+                      <Upload className="w-8 h-8 text-[#9D174D]/50" />
+                      <span className="font-bold text-slate-700">Tap to choose photo</span>
+                      <span className="text-[11px] text-slate-400">Phone gallery, camera, or file manager</span>
+                    </div>
+                  )}
+                  <input
+                    type="file"
+                    accept="image/*"
+                    capture="environment"
+                    onChange={handleFileUpload}
+                    className="hidden"
+                  />
+                </label>
+                {isUploading && (
+                  <p className="text-[#9D174D] font-bold text-xs mt-2 animate-pulse">⏳ Loading image preview...</p>
+                )}
+                {uploadedPreview && (
+                  <p className="text-emerald-700 font-bold text-xs mt-2">✅ Photo loaded! Fill in details below and click Upload.</p>
+                )}
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block font-bold text-slate-700 uppercase mb-1">Photo Title</label>
+                  <input
+                    type="text"
+                    required
+                    placeholder="e.g. Sports Day 2026, Science Exhibition..."
+                    value={newPhotoTitle}
+                    onChange={(e) => setNewPhotoTitle(e.target.value)}
+                    className="w-full bg-[#FAF7F2] border border-[#E8DFD0] rounded-xl px-3 py-2 text-slate-900 focus:outline-none focus:border-[#9D174D]"
+                  />
+                </div>
+                <div>
+                  <label className="block font-bold text-slate-700 uppercase mb-1">Category</label>
+                  <select
+                    value={newPhotoCategory}
+                    onChange={(e) => setNewPhotoCategory(e.target.value)}
+                    className="w-full bg-[#FAF7F2] border border-[#E8DFD0] rounded-xl px-3 py-2 text-slate-900 focus:outline-none focus:border-[#9D174D]"
+                  >
+                    <option value="Cultural">Cultural</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Empowerment">Empowerment</option>
+                    <option value="Academics">Academics</option>
+                    <option value="Ceremony">Ceremony</option>
+                    <option value="NCC">NCC</option>
+                    <option value="Facilities">Facilities</option>
+                    <option value="Administration">Administration</option>
+                  </select>
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                disabled={!newPhotoUrl || !newPhotoTitle}
+                className="bg-[#9D174D] hover:bg-[#881337] disabled:opacity-40 disabled:cursor-not-allowed text-white font-extrabold px-6 py-3 rounded-xl text-xs flex items-center gap-2 shadow-md transition-all"
+              >
+                <Upload className="w-4 h-4" />
+                <span>Upload to Website Gallery</span>
               </button>
             </form>
+
 
             <div className="bg-white p-6 rounded-2xl border border-[#E8DFD0] space-y-4 shadow-xs">
               <div className="flex justify-between items-center border-b border-[#E8DFD0] pb-3">

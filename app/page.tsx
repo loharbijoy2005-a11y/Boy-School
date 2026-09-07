@@ -22,13 +22,26 @@ import { AdminLoginModal } from '../components/AdminLoginModal';
 import { AdminDashboard } from '../components/AdminDashboard';
 import { Footer } from '../components/Footer';
 import { Notice, AdminUser, FacultyMember } from '../types';
+import { LanguageProvider, useLanguage } from '../contexts/LanguageContext';
 
 export default function HomePage() {
-  const [currentLang, setCurrentLang] = useState<'en' | 'bn'>('en');
+  return (
+    <LanguageProvider>
+      <HomePageInner />
+    </LanguageProvider>
+  );
+}
+
+function HomePageInner() {
+  const { currentLang, setLang } = useLanguage();
   const [isAdmissionModalOpen, setIsAdmissionModalOpen] = useState(false);
   const [isAdminLoginModalOpen, setIsAdminLoginModalOpen] = useState(false);
   const [adminUser, setAdminUser] = useState<AdminUser | null>(null);
   const [activePdfNotice, setActivePdfNotice] = useState<Notice | null>(null);
+
+  const toggleLanguage = () => {
+    setLang(currentLang === 'en' ? 'bn' : 'en');
+  };
 
   // Marquee Announcement Ticker State (Persisted in localStorage)
   const [marqueeText, setMarqueeText] = useState<string>(() => {
@@ -270,10 +283,6 @@ export default function HomePage() {
       bio: 'Ensuring 24/7 security, CCTV surveillance monitoring, and campus safety for our girls school.',
     },
   ]);
-
-  const toggleLanguage = () => {
-    setCurrentLang((prev) => (prev === 'en' ? 'bn' : 'en'));
-  };
 
   const handleDownloadRoutine = () => {
     alert('Downloading WBBSE Madhyamik & WBCHSE Higher Secondary Exam Routine 2026 (PDF)...');
