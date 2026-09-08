@@ -7,7 +7,7 @@ Official web portal and digital management platform for **Mahishadal Raj High Sc
 ## 🔗 Quick Links
 
 - **🌐 Live Web Portal:** [https://mahishadal-boys-school.vercel.app](https://mahishadal-boys-school.vercel.app)
-- **🐙 GitHub Repository:** [https://github.com/loharbijoy2005-a11y/School](https://github.com/loharbijoy2005-a11y/School)
+- **🐙 GitHub Repository:** [https://github.com/loharbijoy2005-a11y/Boy-School](https://github.com/loharbijoy2005-a11y/Boy-School)
 
 ---
 
@@ -52,7 +52,7 @@ Official web portal and digital management platform for **Mahishadal Raj High Sc
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/loharbijoy2005-a11y/School.git
+   git clone https://github.com/loharbijoy2005-a11y/Boy-School.git
    cd School
    ```
 

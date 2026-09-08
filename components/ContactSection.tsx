@@ -101,14 +101,21 @@ export const ContactSection: React.FC = () => {
 
             {/* Embedded Circular Map Pin Preview */}
             <div className="pt-2">
-              <div className="h-44 rounded-2xl overflow-hidden border border-[#E8DFD0] relative bg-slate-100 flex items-center justify-center shadow-xs">
-                <iframe
-                  title="Mahishadal Campus Location Map"
-                  src="https://maps.google.com/maps?q=Mahishadal+Boys+High+School+Purba+Medinipur&t=&z=14&ie=UTF8&iwloc=&output=embed"
-                  className="w-full h-full border-0 opacity-90"
-                  loading="lazy"
-                ></iframe>
-              </div>
+              <a href="https://maps.app.goo.gl/PLP1s6bBQM7C86SF6" target="_blank" rel="noopener noreferrer" className="block relative group">
+                <div className="h-44 rounded-2xl overflow-hidden border border-[#E8DFD0] relative bg-slate-100 flex items-center justify-center shadow-xs transition-opacity group-hover:opacity-90">
+                  <iframe
+                    title="Mahishadal Campus Location Map"
+                    src="https://maps.google.com/maps?q=Mahishadal+Raj+High+School+Purba+Medinipur&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                    className="w-full h-full border-0 pointer-events-none"
+                    loading="lazy"
+                  ></iframe>
+                  <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span className="bg-white/90 text-slate-800 font-bold px-4 py-2 rounded-full shadow-lg backdrop-blur-sm transform translate-y-2 group-hover:translate-y-0 transition-all text-sm flex items-center gap-2">
+                      <i className="fa-solid fa-location-dot text-rose-600"></i> Open in Google Maps
+                    </span>
+                  </div>
+                </div>
+              </a>
             </div>
 
           </div>
