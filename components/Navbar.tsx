@@ -254,7 +254,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               <div className="absolute top-full left-0 w-64 bg-[#0A2018] border border-emerald-800 shadow-2xl rounded-b-xl hidden group-hover:block overflow-hidden z-50 text-xs font-bold capitalize tracking-normal">
                 <a href="#seminars" className="block px-4 py-2.5 hover:bg-emerald-900 text-slate-200 hover:text-amber-300 border-b border-emerald-900/60">Oasis Scholarship Club & Eco Club</a>
                 <a href="#seminars" className="block px-4 py-2.5 hover:bg-emerald-900 text-slate-200 hover:text-amber-300 border-b border-emerald-900/60">NCC Boys Wing Battalion</a>
-                <a href="#seminars" className="block px-4 py-2.5 hover:bg-emerald-900 text-slate-200 hover:text-amber-300 border-b border-emerald-900/60">Annual Patrika ("Gayeswari Arghya")</a>
+                <a href="#seminars" className="block px-4 py-2.5 hover:bg-emerald-900 text-slate-200 hover:text-amber-300 border-b border-emerald-900/60">Annual Patrika ("Raj Arghya")</a>
                 <a href="#seminars" className="block px-4 py-2.5 hover:bg-emerald-900 text-slate-200 hover:text-amber-300">Saraswati Puja & Cultural Competitions</a>
               </div>
             </div>

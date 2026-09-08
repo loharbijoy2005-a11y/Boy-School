@@ -3,8 +3,8 @@ export const en = {
   nav: {
     updates: 'UPDATES',
     welcome: "Welcome to Mahishadal Raj High School (H.S.) • Estd 1945 • WBBSE & WBCHSE Recognized • UDISE: 19190806002",
-    excellence: 'Excellence in Female Education & Empowerment',
-    schoolName: "MAHISHADAL GAYESWARI High School (H.S.)",
+    excellence: 'Excellence in Boys Education & Empowerment',
+    schoolName: "Mahishadal Raj High School (H.S.)",
     schoolType: "(Government Sponsored Boys' Higher Secondary School)",
     recognized: '★ Recognized by WBBSE & WBCHSE',
     banglarId: 'Banglar Shiksha ID: WB-1945-MRHS',

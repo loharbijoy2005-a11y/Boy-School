@@ -13,7 +13,7 @@ export const FloatingEdgeFlaps: React.FC = () => {
           onClick={() => setShowPatrikaModal(true)}
           className="edge-flap-btn edge-flap-left-btn flex items-center gap-1.5 shadow-md"
           style={{ background: '#701A1E', color: '#FFFFFF' }}
-          title="School Annual Patrika (Gayeswari Arghya 2026)"
+          title="School Annual Patrika (Raj Arghya 2026)"
         >
           <FileText className="w-3.5 h-3.5 text-amber-300 rotate-90" />
           <span>PUBLICATIONS / PATRIKA</span>
@@ -63,7 +63,7 @@ export const FloatingEdgeFlaps: React.FC = () => {
                   Annual Literary Publication
                 </span>
                 <h3 className="font-serif font-extrabold text-2xl text-[#292524]">
-                  "Gayeswari Arghya 2026"
+                  "Raj Arghya 2026"
                 </h3>
               </div>
             </div>
@@ -86,7 +86,7 @@ export const FloatingEdgeFlaps: React.FC = () => {
             <div className="flex justify-end gap-3 pt-2">
               <button
                 onClick={() => {
-                  alert('Downloading "Gayeswari Arghya 2026 (Digital PDF Edition)"...');
+                  alert('Downloading "Raj Arghya 2026 (Digital PDF Edition)"...');
                   setShowPatrikaModal(false);
                 }}
                 className="w-full bg-[#701A1E] hover:bg-[#501215] text-white font-bold py-3 rounded-xl text-xs flex items-center justify-center gap-2 shadow-md transition-all"

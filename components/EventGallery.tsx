@@ -34,7 +34,7 @@ export const EventGallery: React.FC<EventGalleryProps> = ({ galleryItems: propGa
         return;
       }
       if (typeof window !== 'undefined') {
-        const saved = localStorage.getItem('mgghs_gallery');
+        const saved = localStorage.getItem('MRHS_gallery');
         if (saved) {
           try {
             const parsed = JSON.parse(saved);
@@ -53,10 +53,10 @@ export const EventGallery: React.FC<EventGalleryProps> = ({ galleryItems: propGa
     // Listen for storage changes (when admin uploads)
     const handleStorage = () => loadGallery();
     window.addEventListener('storage', handleStorage);
-    window.addEventListener('mgghs_gallery_updated', handleStorage);
+    window.addEventListener('MRHS_gallery_updated', handleStorage);
     return () => {
       window.removeEventListener('storage', handleStorage);
-      window.removeEventListener('mgghs_gallery_updated', handleStorage);
+      window.removeEventListener('MRHS_gallery_updated', handleStorage);
     };
   }, [propGallery]);
 

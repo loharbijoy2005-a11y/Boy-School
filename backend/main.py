@@ -1,5 +1,5 @@
 """
-MAHISHADAL GAYESWARI GIRLS' HIGH SCHOOL (H.S.)
+Mahishadal Raj High School (H.S.)
 Python FastAPI Backend Layer
 REST API Endpoints for Notices, Admissions, Admin Dashboard & Media Uploads
 """
@@ -14,7 +14,7 @@ import random
 import io
 
 app = FastAPI(
-    title="Mahishadal Gayeswari Girls' High School API",
+    title="Mahishadal Raj High School API",
     description="Backend REST service for notice circulars, admission inquiries, media management, and admin auth.",
     version="1.1.0"
 )
@@ -124,7 +124,7 @@ inquiries_db: List[dict] = [
 def health_check():
     return {
         "status": "online",
-        "school": "Mahishadal Gayeswari Girls' High School (H.S.)",
+        "school": "Mahishadal Raj High School (H.S.)",
         "server_time": datetime.utcnow().isoformat()
     }
 
@@ -160,7 +160,7 @@ def delete_notice(notice_id: str):
 
 @app.post("/api/v1/inquiry", response_model=AdmissionInquiryResponse)
 def submit_admission_inquiry(inquiry: AdmissionInquiryCreate):
-    tracking_code = f"MGGHS-2026-{random.randint(1000, 9999)}"
+    tracking_code = f"MRHS-2026-{random.randint(1000, 9999)}"
     inquiries_db.append({
         "id": str(len(inquiries_db) + 1),
         "student_name": inquiry.student_name,
@@ -198,20 +198,20 @@ def export_inquiries_csv():
     return StreamingResponse(
         io.BytesIO(stream.getvalue().encode()),
         media_type="text/csv",
-        headers={"Content-Disposition": "attachment; filename=MGGHS_Inquiries_2026.csv"}
+        headers={"Content-Disposition": "attachment; filename=MRHS_Inquiries_2026.csv"}
     )
 
 @app.post("/api/v1/auth/login", response_model=AdminLoginResponse)
 def admin_login(creds: AdminLoginRequest):
-    if creds.username == "headmistress" and creds.password == "mgghs1945":
+    if creds.username == "Headmaster" and creds.password == "MRHS1945":
         return {
-            "access_token": "mock-jwt-token-mgghs-headmistress-2026",
+            "access_token": "mock-jwt-token-MRHS-Headmaster-2026",
             "token_type": "bearer",
-            "role": "headmistress_admin"
+            "role": "Headmaster_admin"
         }
     raise HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
-        detail="Invalid credentials for Headmistress portal login"
+        detail="Invalid credentials for Headmaster portal login"
     )
 
 if __name__ == "__main__":

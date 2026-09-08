@@ -27,14 +27,14 @@ export const AdminLoginModal: React.FC<AdminLoginModalProps> = ({
       return;
     }
 
-    const isHeadmaster = username === 'Headmaster' && password === 'mgghs1945';
-    const isAdmin = (username === 'admin' || username === 'Headmaster') && (password === 'admin123' || password === 'mgghs1945');
+    const isHeadmaster = username === 'Headmaster' && password === 'MRHS1945';
+    const isAdmin = (username === 'admin' || username === 'Headmaster') && (password === 'admin123' || password === 'MRHS1945');
 
     if (isAdmin || isHeadmaster) {
       const adminUser: AdminUser = {
         username: username || 'admin',
         role: 'Headmaster',
-        token: 'mock-jwt-token-mgghs-2026',
+        token: 'mock-jwt-token-MRHS-2026',
       };
       onLoginSuccess(adminUser);
       onClose();
@@ -43,7 +43,7 @@ export const AdminLoginModal: React.FC<AdminLoginModalProps> = ({
       setErrorMsg('');
     } else {
       setAttempts((prev) => prev + 1);
-      setErrorMsg('Invalid login! Username: admin or Headmaster | Password: admin123 or mgghs1945');
+      setErrorMsg('Invalid login! Username: admin or Headmaster | Password: admin123 or MRHS1945');
     }
   };
 
@@ -104,7 +104,7 @@ export const AdminLoginModal: React.FC<AdminLoginModalProps> = ({
               <input
                 type="password"
                 required
-                placeholder="Password (mgghs1945)"
+                placeholder="Password (MRHS1945)"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-rose-600 focus:ring-2 focus:ring-rose-200"

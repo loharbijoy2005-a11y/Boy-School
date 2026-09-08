@@ -53,7 +53,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
   // Notices State with localStorage Persistence
   const [notices, setNotices] = useState<Notice[]>(() => {
     if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem('mgghs_notices');
+      const saved = localStorage.getItem('MRHS_notices');
       if (saved) {
         try { return JSON.parse(saved); } catch (e) {}
       }
@@ -87,7 +87,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
   // Save notices to localStorage
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      localStorage.setItem('mgghs_notices', JSON.stringify(notices));
+      localStorage.setItem('MRHS_notices', JSON.stringify(notices));
     }
   }, [notices]);
 
@@ -123,7 +123,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
   // Media Manager State with localStorage Persistence
   const [galleryItems, setGalleryItems] = useState<GalleryItem[]>(() => {
     if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem('mgghs_gallery');
+      const saved = localStorage.getItem('MRHS_gallery');
       if (saved) {
         try { return JSON.parse(saved); } catch (e) {}
       }
@@ -139,15 +139,15 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
       { id: '8', title: 'Annual Academic Prize Distribution', category: 'Ceremony', imageUrl: '/assets/prize_distribution.jpg' },
       { id: '9', title: 'NCC & Defense Drill Demonstration', category: 'Empowerment', imageUrl: '/assets/ncc_defense.jpg' },
       { id: '10', title: 'Headmaster Headmaster Portrait', category: 'Administration', imageUrl: '/assets/Headmaster.jpg' },
-      { id: '11', title: 'Mahishadal Gayeswari Boys High School Crest Logo', category: 'Branding', imageUrl: '/assets/school_logo.jpg' },
+      { id: '11', title: 'Mahishadal Raj Boys High School Crest Logo', category: 'Branding', imageUrl: '/assets/school_logo.jpg' },
     ];
   });
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      localStorage.setItem('mgghs_gallery', JSON.stringify(galleryItems));
+      localStorage.setItem('MRHS_gallery', JSON.stringify(galleryItems));
       // Notify EventGallery component on the main site
-      window.dispatchEvent(new Event('mgghs_gallery_updated'));
+      window.dispatchEvent(new Event('MRHS_gallery_updated'));
     }
   }, [galleryItems]);
 
@@ -217,7 +217,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
       onUpdateMarquee(liveTickerInput);
     }
     if (typeof window !== 'undefined') {
-      localStorage.setItem('mgghs_marquee', liveTickerInput);
+      localStorage.setItem('MRHS_marquee', liveTickerInput);
     }
     alert('Live breaking announcement ticker updated on homepage successfully!');
   };

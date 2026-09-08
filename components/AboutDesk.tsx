@@ -158,7 +158,7 @@ export const AboutDesk: React.FC<AboutDeskProps> = ({ facultyList }) => {
                   <div className="bg-[#FAF7F0] p-4 rounded-xl border border-[#DFD7C7] text-xs space-y-2">
                     <p className="font-bold text-[#292524]">Office Helpdesk Timings:</p>
                     <p className="text-slate-600">Monday - Friday: 10:30 AM to 4:30 PM | Saturday: 10:30 AM to 2:00 PM</p>
-                    <p className="text-[#701A1E] font-bold">Contact Email: mgghschool1945@gmail.com</p>
+                    <p className="text-[#701A1E] font-bold">Contact Email: MRHSchool1945@gmail.com</p>
                   </div>
                 </div>
               )}

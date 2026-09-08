@@ -1,5 +1,5 @@
 /**
- * MAHISHADAL GAYESWARI High School (H.S.)
+ * Mahishadal Raj High School (H.S.)
  * 10x Ultra-Luxurious Educational Portal TypeScript Definitions
  */
 

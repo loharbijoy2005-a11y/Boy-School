@@ -39,7 +39,7 @@ export const SeminarsCarousel: React.FC = () => {
       title: 'District Inter-School Athletic Meet & Prize Distribution',
       date: '10 JAN 2026',
       venue: 'Mahishadal Rajbari Athletics Stadium',
-      description: 'Our female athletes secured 1st position in 100m sprint, relay race, and high jump competitions across Purba Medinipur district.',
+      description: 'Our male athletes secured 1st position in 100m sprint, relay race, and high jump competitions across Purba Medinipur district.',
       imageUrl: '/assets/prize_distribution.jpg',
       badge: 'Sports Championship Award',
     },

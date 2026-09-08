@@ -1,5 +1,5 @@
 /**
- * MAHISHADAL GAYESWARI High School (H.S.)
+ * Mahishadal Raj High School (H.S.)
  * Ultra-Modern Animation & JS Controller
  */
 
@@ -9,7 +9,7 @@ const i18n = {
     schoolName: "Mahishadal Raj High School (H.S.)",
     schoolTagline: "Nurturing Knowledge, Discipline, and Boys' Empowerment Since 1945",
     phoneText: "+91 3228 240211",
-    emailText: "mgghschool1945@gmail.com",
+    emailText: "MRHSchool1945@gmail.com",
     schoolId: "Banglar Shiksha ID: WB-1945-MRHS",
     indexBadge: "WBBSE: E1-042 | WBCHSE: 105084",
     langToggle: "বাংলা",
@@ -44,7 +44,7 @@ const i18n = {
     schoolName: "মহিষাদল রাজ হাই স্কুল (উঃ মাঃ)",
     schoolTagline: "১৯৪৫ সাল থেকে জ্ঞান চর্চা, শৃঙ্খলা ও নারী শিক্ষার অগ্রদূত",
     phoneText: "+91 ৩২২৮ ২৪০২১১",
-    emailText: "mgghschool1945@gmail.com",
+    emailText: "MRHSchool1945@gmail.com",
     schoolId: "বাংলার শিক্ষা আইডি: WB-1945-MRHS",
     indexBadge: "মধ্যশিক্ষা পর্ষদ: E1-042 | উচ্চ মাধ্যমিক: 105084",
     langToggle: "English",
@@ -302,7 +302,7 @@ function openNoticePdfModal(title, date, category) {
     <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 2rem;">
       <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #F43F5E; padding-bottom: 1rem; margin-bottom: 1.5rem;">
         <div>
-          <h4 style="color: #1E3A8A; font-size: 1.1rem; margin-bottom: 0.2rem;">MAHISHADAL GAYESWARI High School (H.S.)</h4>
+          <h4 style="color: #1E3A8A; font-size: 1.1rem; margin-bottom: 0.2rem;">Mahishadal Raj High School (H.S.)</h4>
           <span style="font-size: 0.8rem; color: #64748B;">Circular Ref: MRHS/CIRCULAR/2026/N-${Math.floor(100+Math.random()*900)}</span>
         </div>
         <span style="background: #FFE4E6; color: #F43F5E; font-weight: 700; font-size: 0.8rem; padding: 0.3rem 0.8rem; border-radius: 20px;">${date}</span>

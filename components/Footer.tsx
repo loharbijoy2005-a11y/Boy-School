@@ -91,7 +91,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAdminLoginModal }) => {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-[#C58B24] shrink-0" />
-                <span>mgghschool1945@gmail.com</span>
+                <span>MRHSchool1945@gmail.com</span>
               </li>
             </ul>
           </div>

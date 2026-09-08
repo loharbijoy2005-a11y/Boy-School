@@ -46,7 +46,7 @@ function HomePageInner() {
   // Marquee Announcement Ticker State (Persisted in localStorage)
   const [marqueeText, setMarqueeText] = useState<string>(() => {
     if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem('mgghs_marquee');
+      const saved = localStorage.getItem('MRHS_marquee');
       if (saved) return saved;
     }
     return "🚨 ONLINE ADMISSION OPEN FOR CLASS V TO XI (SESSION 2026-27) | WBBSE & WBCHSE 2ND UNIT TEST ROUTINE PUBLISHED | Oasis Scholarship K1 & K2 GRANT DESK ACTIVE";
@@ -65,7 +65,7 @@ function HomePageInner() {
       gender: 'Madam',
       imageUrl: '/assets/Headmaster.jpg',
       bio: "Welcome to Mahishadal Raj High School (H.S.). Since 1945, our school has been dedicated to moulding young boys into confident, moral, and educated citizens. Through state welfare programs like Oasis Scholarship, Sabooj Sathi, ICT Computer lab, and dedicated faculty, we ensure a safe, supportive, and vibrant learning atmosphere for every student.",
-      email: 'Headmaster@mgghs.edu.in',
+      email: 'Headmaster@MRHS.edu.in',
       phone: '+91 3228 240211',
     },
     {
@@ -415,7 +415,7 @@ function HomePageInner() {
               </button>
             </div>
             <div className="space-y-3 text-xs">
-              <p className="font-bold text-amber-400">MAHISHADAL GAYESWARI High School (H.S.)</p>
+              <p className="font-bold text-amber-400">Mahishadal Raj High School (H.S.)</p>
               <p className="text-slate-400">Category: {activePdfNotice.category.toUpperCase()} | Publish Date: {activePdfNotice.publishDate}</p>
               <p className="text-slate-300 leading-relaxed bg-slate-950 p-4 rounded-xl border border-slate-800">{activePdfNotice.description}</p>
               <div className="flex justify-end gap-3 pt-3">

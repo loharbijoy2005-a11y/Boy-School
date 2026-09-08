@@ -2,28 +2,37 @@ const fs = require('fs');
 const path = require('path');
 
 const replacements = [
-  { regex: /Mahishadal Raj High School/g, replacement: "Mahishadal Raj High School" },
-  { regex: /Raj/g, replacement: "Raj" },
-  { regex: /MRHS/g, replacement: "MRHS" },
-  { regex: /High School/gi, replacement: "High School" },
-  { regex: /Boys'/gi, replacement: "Boys'" },
-  { regex: /\bgirls\b/g, replacement: "boys" },
-  { regex: /\bGirls\b/g, replacement: "Boys" },
-  { regex: /\bgirl child\b/g, replacement: "student" },
-  { regex: /\bBoys'\b/g, replacement: "boys'" },
-  { regex: /Headmaster/gi, replacement: "Headmaster" },
-  { regex: /Paramita Giri \(Bag\)/g, replacement: "Headmaster" },
-  { regex: /Oasis Scholarship/gi, replacement: "Oasis Scholarship" },
-  { regex: /students/gi, replacement: "students" },
+  // School Names & Acronyms
+  { regex: /Mahishadal Raj? High School/gi, replacement: "Mahishadal Raj High School" },
+  { regex: /Mahishadal Raj High School/gi, replacement: "Mahishadal Raj High School" },
+  { regex: /Raj?/gi, replacement: "Raj" },
+  { regex: /Raj/gi, replacement: "Raj" },
+  { regex: /MRHS/gi, replacement: "MRHS" },
+  
+  // Specific phrases
+  { regex: /Boys Education/gi, replacement: "Boys Education" },
+  { regex: /girls'? empowerment/gi, replacement: "boys' empowerment" },
   { regex: /student/gi, replacement: "student" },
+  { regex: /student/gi, replacement: "student" },
+  { regex: /male/gi, replacement: "male" },
+  
+  // Roles
+  { regex: /Headmaster/gi, replacement: "Headmaster" },
+  { regex: /Headmaster/gi, replacement: "Headmaster" },
+  { regex: /Paramita Giri \(Bag\)/gi, replacement: "Headmaster" },
+  
+  // Bengali text
   { regex: /মহিষাদল রাজ হাই স্কুল/g, replacement: "মহিষাদল রাজ হাই স্কুল" },
+  { regex: /মহিষাদল রাজ/g, replacement: "মহিষাদল রাজ" },
+  { regex: /রাজ/g, replacement: "রাজ" },
   { regex: /রাজ/g, replacement: "রাজ" },
   { regex: /বিদ্যালয়/g, replacement: "বিদ্যালয়" },
+  { regex: /বালক/g, replacement: "বালক" },
   { regex: /ছাত্র/g, replacement: "ছাত্র" },
   { regex: /ছাত্র/g, replacement: "ছাত্র" },
+  { regex: /ছাত্রশ্রী/g, replacement: "ওয়েসিস স্কলারশিপ" },
   { regex: /প্রধান শিক্ষক/g, replacement: "প্রধান শিক্ষক" },
-  { regex: /প্রধান শিক্ষক/g, replacement: "প্রধান শিক্ষক" },
-  { regex: /ছাত্রশ্রী/g, replacement: "ওয়েসিস স্কলারশিপ" }
+  { regex: /প্রধান শিক্ষক/g, replacement: "প্রধান শিক্ষক" }
 ];
 
 function processDirectory(directory) {
@@ -45,7 +54,8 @@ function processDirectory(directory) {
         fullPath.endsWith('.html') ||
         fullPath.endsWith('.css') ||
         fullPath.endsWith('.json') ||
-        fullPath.endsWith('.md')
+        fullPath.endsWith('.md') ||
+        fullPath.endsWith('.py')
       ) {
         let content = fs.readFileSync(fullPath, 'utf8');
         let newContent = content;

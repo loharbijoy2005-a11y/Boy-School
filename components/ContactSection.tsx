@@ -84,7 +84,7 @@ export const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <p className="font-bold text-[#1E293B] text-sm">Official Email Address:</p>
-                  <p className="text-slate-600 mt-0.5">mgghschool1945@gmail.com</p>
+                  <p className="text-slate-600 mt-0.5">MRHSchool1945@gmail.com</p>
                 </div>
               </li>
 
