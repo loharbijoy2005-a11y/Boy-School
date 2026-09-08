@@ -25,7 +25,7 @@ export const HeroNoticeOverlay: React.FC<HeroNoticeOverlayProps> = ({
       id: '1',
       badge: '🏆 SCHOOL ACHIEVEMENTS & SPORTS',
       title: 'STUDENTS BRING HOME THE TROPHY',
-      subtitle: "Our girls celebrate with faculty and Headmistress Smt. Kalyani Maity after a hard-fought district championship win.",
+      subtitle: "Our girls celebrate with faculty and Headmistress Paramita Giri (Bag) after a hard-fought district championship win.",
       url: '/assets/sports_day.jpg',
     },
     {

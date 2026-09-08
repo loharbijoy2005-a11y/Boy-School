@@ -32,7 +32,7 @@ const i18n = {
     noticeHeaderTitle: "Live Notice & Examination Board",
     noticeHeaderSub: "Real-time updates regarding school exams, unit test routines, H.S. practicals, and holiday notifications.",
     deskTitle: "Headmistress's Desk",
-    deskName: "Smt. Kalyani Maity",
+    deskName: "Paramita Giri (Bag)",
     deskRole: "Headmistress, M.A., B.Ed.",
     deskMsg1: "Welcome to Mahishadal Gayeswari Girls' High School (H.S.). Since 1945, our school has been dedicated to moulding young girls into confident, moral, and educated citizens.",
     deskMsg2: "Through government welfare programs like Kanyashree, Sabooj Sathi, ICT Computer lab, and dedicated faculty, we ensure a safe, supportive, and vibrant learning atmosphere for every girl child.",
@@ -311,7 +311,7 @@ function openNoticePdfModal(title, date, category) {
       <div style="color: #334155; line-height: 1.7; margin-bottom: 2rem;">
         <p><strong>SUBJECT: ${title.toUpperCase()}</strong></p>
         <br>
-        <p>This is an official administrative notice issued by order of Headmistress Smt. Kalyani Maity and the School Managing Committee of Mahishadal Gayeswari Girls' High School (H.S.).</p>
+        <p>This is an official administrative notice issued by order of Headmistress Paramita Giri (Bag) and the School Managing Committee of Mahishadal Gayeswari Girls' High School (H.S.).</p>
       </div>
 
       <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #E2E8F0; padding-top: 1.2rem;">

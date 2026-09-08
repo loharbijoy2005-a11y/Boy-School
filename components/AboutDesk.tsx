@@ -118,7 +118,7 @@ export const AboutDesk: React.FC<AboutDeskProps> = ({ facultyList }) => {
                     {/* Signature Line Placeholder */}
                     <div className="pt-3 border-t border-[#DFD7C7] flex justify-between items-center text-xs text-slate-600">
                       <span>Mahishadal Gayeswari Girls' High School (H.S.)</span>
-                      <span className="font-serif italic text-sm text-[#701A1E] font-bold">Kalyani Maity (HM)</span>
+                      <span className="font-serif italic text-sm text-[#701A1E] font-bold">Paramita Giri (Bag)</span>
                     </div>
                   </div>
                 </div>
@@ -140,7 +140,7 @@ export const AboutDesk: React.FC<AboutDeskProps> = ({ facultyList }) => {
                     </div>
                     <div className="bg-[#FAF7F0] p-4 rounded-xl border border-[#DFD7C7]">
                       <p className="font-bold text-[#292524]">Member Secretary</p>
-                      <p className="text-slate-600 text-[11px]">Smt. Kalyani Maity (Headmistress)</p>
+                      <p className="text-slate-600 text-[11px]">Paramita Giri (Bag) (Headmistress)</p>
                     </div>
                   </div>
                 </div>

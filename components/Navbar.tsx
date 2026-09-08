@@ -196,7 +196,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               </a>
               <div className="absolute top-full left-0 w-64 bg-[#0A2018] border border-emerald-800 shadow-2xl rounded-b-xl hidden group-hover:block overflow-hidden z-50 text-xs font-bold capitalize tracking-normal">
                 <a href="#desk" className="block px-4 py-2.5 hover:bg-emerald-900 text-slate-200 hover:text-amber-300 border-b border-emerald-900/60">School Managing Committee (SMC)</a>
-                <a href="#desk" className="block px-4 py-2.5 hover:bg-emerald-900 text-slate-200 hover:text-amber-300 border-b border-emerald-900/60">Headmistress's Desk (Smt. Kalyani Maity)</a>
+                <a href="#desk" className="block px-4 py-2.5 hover:bg-emerald-900 text-slate-200 hover:text-amber-300 border-b border-emerald-900/60">Headmistress's Desk (Paramita Giri (Bag))</a>
                 <a href="#desk" className="block px-4 py-2.5 hover:bg-emerald-900 text-slate-200 hover:text-amber-300 border-b border-emerald-900/60">Office & Accounts Administration</a>
                 <a href="#desk" className="block px-4 py-2.5 hover:bg-emerald-900 text-slate-200 hover:text-amber-300 border-b border-emerald-900/60">Central Library Administration</a>
                 <a href="#desk" className="block px-4 py-2.5 hover:bg-emerald-900 text-slate-200 hover:text-amber-300">Non-Teaching & Support Staff</a>

@@ -56,7 +56,7 @@ function HomePageInner() {
   const [facultyList, setFacultyList] = useState<FacultyMember[]>([
     {
       id: '1',
-      name: 'Smt. Kalyani Maity',
+      name: 'Paramita Giri (Bag)',
       designation: 'Headmistress',
       qualification: 'M.A. (Bengali), B.Ed.',
       subject: 'Bengali Literature & School Admin',

@@ -31,7 +31,7 @@ export const en = {
   hero: {
     badge1: '🏆 SCHOOL ACHIEVEMENTS & SPORTS',
     title1: 'STUDENTS BRING HOME THE TROPHY',
-    sub1: "Our girls celebrate with faculty and Headmistress Smt. Kalyani Maity after a hard-fought district championship win.",
+    sub1: "Our girls celebrate with faculty and Headmistress Paramita Giri (Bag) after a hard-fought district championship win.",
     badge2: '🏛️ HERITAGE SCHOOL CAMPUS (ESTD 1945)',
     title2: 'HISTORIC MAIN BUILDING & ASSEMBLY GROUND',
     sub2: "Over 2,200+ female students gather daily for morning prayers and value education in our historic campus.",

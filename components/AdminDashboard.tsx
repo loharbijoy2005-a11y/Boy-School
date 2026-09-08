@@ -138,7 +138,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
       { id: '7', title: 'STEM Science & Innovation Exhibition', category: 'Academics', imageUrl: '/assets/science_exhibition.jpg' },
       { id: '8', title: 'Annual Academic Prize Distribution', category: 'Ceremony', imageUrl: '/assets/prize_distribution.jpg' },
       { id: '9', title: 'NCC & Defense Drill Demonstration', category: 'Empowerment', imageUrl: '/assets/ncc_defense.jpg' },
-      { id: '10', title: 'Headmistress Smt. Kalyani Maity Portrait', category: 'Administration', imageUrl: '/assets/headmistress.jpg' },
+      { id: '10', title: 'Headmistress Paramita Giri (Bag) Portrait', category: 'Administration', imageUrl: '/assets/headmistress.jpg' },
       { id: '11', title: 'Mahishadal Gayeswari Girls High School Crest Logo', category: 'Branding', imageUrl: '/assets/school_logo.jpg' },
     ];
   });
