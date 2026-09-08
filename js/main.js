@@ -255,15 +255,15 @@ function openWelfareModal(scheme) {
   if (!modalBody || !modalTitle) return;
 
   if (scheme === 'Oasis Scholarship') {
-    modalTitle.textContent = "Oasis Scholarship Prakalpa (K1 & K2 Grants)";
+    modalTitle.textContent = "State Government Scholarships (Oasis & SVMCM)";
     modalBody.innerHTML = `
       <div style="line-height: 1.7; color: #334155;">
         <h4 style="color: #1E3A8A; font-size: 1.1rem; margin-bottom: 0.5rem;">West Bengal Oasis Scholarship Scheme Details</h4>
         <p><strong>Eligibility:</strong> Unmarried students aged 13-18 enrolled in Classes VIII to XII.</p>
         <br>
         <ul style="list-style: disc; padding-left: 1.5rem;">
-          <li><strong>K1 Annual Stipend:</strong> ₹1,000 per year for students aged 13 to 18 years.</li>
-          <li><strong>K2 One-Time Grant:</strong> ₹25,000 upon reaching 18 years of age and continuing studies.</li>
+          <li><strong>Pre-Matric Stipend:</strong> ₹1,000 per year for students aged 13 to 18 years.</li>
+          <li><strong>SVMCM Grant:</strong> ₹25,000 upon reaching 18 years of age and continuing studies.</li>
         </ul>
         <br>
         <a href="https://wbOasis Scholarship.gov.in" target="_blank" class="btn btn-rose" style="display: inline-flex; width: 100%;">

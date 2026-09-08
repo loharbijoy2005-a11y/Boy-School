@@ -33,7 +33,7 @@ export const NoticeBoard: React.FC<NoticeBoardProps> = ({ onOpenPdfModal }) => {
     },
     {
       id: '3',
-      title: 'Oasis Scholarship K1 & K2 Application Renewal Notice',
+      title: 'SVMCM & Oasis Scholarships Application Renewal Notice',
       category: 'schemes',
       publishDate: '28 Aug 2026',
       pdfUrl: '/notices/Oasis Scholarship-renewal-2026.pdf',

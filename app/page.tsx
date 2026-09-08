@@ -49,7 +49,7 @@ function HomePageInner() {
       const saved = localStorage.getItem('MRHS_marquee');
       if (saved) return saved;
     }
-    return "🚨 ONLINE ADMISSION OPEN FOR CLASS V TO XI (SESSION 2026-27) | WBBSE & WBCHSE 2ND UNIT TEST ROUTINE PUBLISHED | Oasis Scholarship K1 & K2 GRANT DESK ACTIVE";
+    return "🚨 ONLINE ADMISSION OPEN FOR CLASS V TO XI (SESSION 2026-27) | WBBSE & WBCHSE 2ND UNIT TEST ROUTINE PUBLISHED | SVMCM & Oasis Scholarships GRANT DESK ACTIVE";
   });
 
   // Dynamic Faculty & Staff Roster State

@@ -8,19 +8,19 @@ const replacements = [
   { regex: /Raj?/gi, replacement: "Raj" },
   { regex: /Raj/gi, replacement: "Raj" },
   { regex: /MRHS/gi, replacement: "MRHS" },
-  
+
   // Specific phrases
   { regex: /Boys Education/gi, replacement: "Boys Education" },
   { regex: /girls'? empowerment/gi, replacement: "boys' empowerment" },
   { regex: /student/gi, replacement: "student" },
   { regex: /student/gi, replacement: "student" },
   { regex: /male/gi, replacement: "male" },
-  
+
   // Roles
   { regex: /Headmaster/gi, replacement: "Headmaster" },
   { regex: /Headmaster/gi, replacement: "Headmaster" },
   { regex: /Paramita Giri \(Bag\)/gi, replacement: "Headmaster" },
-  
+
   // Bengali text
   { regex: /মহিষাদল রাজ হাই স্কুল/g, replacement: "মহিষাদল রাজ হাই স্কুল" },
   { regex: /মহিষাদল রাজ/g, replacement: "মহিষাদল রাজ" },
@@ -37,20 +37,20 @@ const replacements = [
 
 function processDirectory(directory) {
   const files = fs.readdirSync(directory);
-  
+
   for (const file of files) {
     const fullPath = path.join(directory, file);
     const stat = fs.statSync(fullPath);
-    
+
     if (stat.isDirectory()) {
       if (file !== 'node_modules' && file !== '.git' && file !== '.next') {
         processDirectory(fullPath);
       }
     } else {
       if (
-        fullPath.endsWith('.tsx') || 
-        fullPath.endsWith('.ts') || 
-        fullPath.endsWith('.js') || 
+        fullPath.endsWith('.tsx') ||
+        fullPath.endsWith('.ts') ||
+        fullPath.endsWith('.js') ||
         fullPath.endsWith('.html') ||
         fullPath.endsWith('.css') ||
         fullPath.endsWith('.json') ||

@@ -22,7 +22,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   const { t } = useLanguage();
 
   const defaultTickerText = marqueeText || 
-    "Admission Open for Classes V to XI (Session 2026-27) | WBBSE & WBCHSE 2nd Unit Test Schedule Published | Oasis Scholarship K1 & K2 Verification Desk Active";
+    "Admission Open for Classes V to XI (Session 2026-27) | WBBSE & WBCHSE 2nd Unit Test Schedule Published | SVMCM & Oasis Scholarships Verification Desk Active";
 
   return (
     <>
@@ -71,7 +71,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <span>WBBSE Madhyamik & WBCHSE HS Exam Routine 2026</span>
                 <span className="bg-rose-700 text-white text-[9px] font-bold px-1.5 py-0.2 rounded uppercase">NEW</span>
                 <span>&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;</span>
-                <span>Oasis Scholarship K1 & K2 Verification Desk Active</span>
+                <span>SVMCM & Oasis Scholarships Verification Desk Active</span>
                 <span className="bg-rose-700 text-white text-[9px] font-bold px-1.5 py-0.2 rounded uppercase">NEW</span>
               </span>
             </div>

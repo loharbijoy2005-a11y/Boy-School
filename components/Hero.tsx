@@ -90,7 +90,7 @@ export const Hero: React.FC<HeroProps> = ({
     },
     {
       id: '3',
-      title: 'Oasis Scholarship K1 & K2 Grant Disbursement Verification Helpdesk Active',
+      title: 'SVMCM & Oasis Scholarships Grant Disbursement Verification Helpdesk Active',
       category: 'schemes',
       publishDate: '18 AUG',
       pdfUrl: '/notices/Oasis Scholarship-grant-2026.pdf',

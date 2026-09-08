@@ -153,7 +153,7 @@ export const AboutDesk: React.FC<AboutDeskProps> = ({ facultyList }) => {
                     <p className="text-xs text-[#C58B24] font-bold">Banglar Shiksha Nodal Desk & Clerical Services</p>
                   </div>
                   <p className="text-xs text-slate-700 leading-relaxed">
-                    Responsible for student registration, Banglar Shiksha e-portal data entry, Oasis Scholarship K1/K2 scholarship application processing, marksheets, and leaving certificate issuance.
+                    Responsible for student registration, Banglar Shiksha e-portal data entry, SVMCM & Oasis Scholarships scholarship application processing, marksheets, and leaving certificate issuance.
                   </p>
                   <div className="bg-[#FAF7F0] p-4 rounded-xl border border-[#DFD7C7] text-xs space-y-2">
                     <p className="font-bold text-[#292524]">Office Helpdesk Timings:</p>

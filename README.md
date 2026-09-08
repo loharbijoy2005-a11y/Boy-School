@@ -19,7 +19,7 @@ Official web portal and digital management platform for **Mahishadal Raj High Sc
 - 📋 **Tabbed Notice Board & PDF Viewer:** Categorized announcements (Madhyamik, Higher Secondary, Grants, Holidays) with integrated PDF preview & download simulation.
 - 🔐 **Admin Management Dashboard:** Secure authentication portal allowing administrators to update announcements, manage faculty rosters, and post updates.
 - 🎓 **Online Admission Portal:** Interactive modal form supporting applications for Class V to Class XI (WBBSE & WBCHSE).
-- 🎁 **Govt Welfare Schemes Corner:** Dedicated information desk for *Oasis Scholarship (K1/K2/K3)*, *Sabooj Sathi*, *Aikyashree*, *Swami Vivekananda Merit-cum-Means (SVMCM)*, and *Taruner Swapna*.
+- 🎁 **Govt Welfare Schemes Corner:** Dedicated information desk for *Oasis Scholarship (Pre-Matric & Post-Matric)*, *Sabooj Sathi*, *Aikyashree*, *Swami Vivekananda Merit-cum-Means (SVMCM)*, and *Taruner Swapna*.
 - 🍱 **Bento-Grid Campus Facilities:** Interactive visual showcase of Science Labs, Smart Classrooms, Library, ICT Computer Lab, Sports Grounds, and Hostel.
 - 💬 **Google Reviews & Feedback Widget:** Authentic community feedback and ratings display.
 - 🗺️ **Interactive Geo-Location & Contact Desk:** Location mapping, direct contact form, and emergency contacts.

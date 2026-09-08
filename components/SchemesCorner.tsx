@@ -11,11 +11,11 @@ export const SchemesCorner: React.FC<SchemesCornerProps> = ({ onOpenWelfareModal
   const schemes: SchemeDetail[] = [
     {
       id: 'Oasis Scholarship',
-      title: 'Oasis Scholarship Prakalpa (K1 & K2)',
+      title: 'Swami Vivekananda Merit Cum Means Scholarship (SVMCM)',
       subTitle: 'student Financial Grant',
-      description: 'Annual stipend of ₹1,000 (K1) for boys aged 13-18 and one-time grant of ₹25,000 (K2) upon reaching 18 years to prevent child marriage and encourage higher education.',
+      description: 'Merit-based financial assistance for meritorious students of West Bengal to pursue higher education, providing monthly stipends based on academic excellence.',
       eligibility: 'Unmarried students in Classes VIII to XII',
-      benefit: '₹1,000/yr (K1) & ₹25,000 (K2)',
+      benefit: 'Varies by Grade & Merit',
       icon: 'UserCheck',
       officialUrl: 'https://wbOasis Scholarship.gov.in',
     },

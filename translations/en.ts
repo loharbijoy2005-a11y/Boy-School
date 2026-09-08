@@ -70,7 +70,7 @@ export const en = {
     visionTag: 'STEM Labs & Smart Classrooms',
     missionTitle: 'Our Mission: Girl Empowerment',
     missionText: 'Equipping students with Oasis Scholarship Prakalpa benefits, Karate self-defense training, ICT computer literacy, and leadership opportunities to eradicate socio-economic barriers and build self-reliant citizens.',
-    missionTag: 'Oasis Scholarship K1/K2 & Self-Defense',
+    missionTag: 'SVMCM & Oasis Scholarships & Self-Defense',
     aimsTitle: 'Our Aims: Social Integrity',
     aimsText: 'Inculcating moral ethics, environmental awareness through eco-clubs, cultural heritage celebration, and civic responsibility so our alumni shine as doctors, engineers, teachers, and administrators.',
     aimsTag: 'Safe, Disciplined & Eco Campus',

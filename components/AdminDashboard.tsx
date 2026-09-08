@@ -47,7 +47,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
   
   // Marquee Ticker State
   const [liveTickerInput, setLiveTickerInput] = useState(
-    marqueeText || "🚨 ONLINE ADMISSION OPEN FOR CLASS V TO XI (SESSION 2026-27) | WBBSE & WBCHSE 2ND UNIT TEST ROUTINE PUBLISHED | Oasis Scholarship K1 & K2 GRANT DESK ACTIVE"
+    marqueeText || "🚨 ONLINE ADMISSION OPEN FOR CLASS V TO XI (SESSION 2026-27) | WBBSE & WBCHSE 2ND UNIT TEST ROUTINE PUBLISHED | SVMCM & Oasis Scholarships GRANT DESK ACTIVE"
   );
 
   // Notices State with localStorage Persistence
