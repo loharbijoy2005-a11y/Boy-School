@@ -1,4 +1,5 @@
 {
+  "name": "mahishadal-raj-boys-school",
   "services": {
     "frontend": {
       "root": ".",
