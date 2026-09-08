@@ -47,7 +47,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
   
   // Marquee Ticker State
   const [liveTickerInput, setLiveTickerInput] = useState(
-    marqueeText || "🚨 ONLINE ADMISSION OPEN FOR CLASS V TO XI (SESSION 2026-27) | WBBSE & WBCHSE 2ND UNIT TEST ROUTINE PUBLISHED | KANYASHREE K1 & K2 GRANT DESK ACTIVE"
+    marqueeText || "🚨 ONLINE ADMISSION OPEN FOR CLASS V TO XI (SESSION 2026-27) | WBBSE & WBCHSE 2ND UNIT TEST ROUTINE PUBLISHED | Oasis Scholarship K1 & K2 GRANT DESK ACTIVE"
   );
 
   // Notices State with localStorage Persistence
@@ -138,8 +138,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
       { id: '7', title: 'STEM Science & Innovation Exhibition', category: 'Academics', imageUrl: '/assets/science_exhibition.jpg' },
       { id: '8', title: 'Annual Academic Prize Distribution', category: 'Ceremony', imageUrl: '/assets/prize_distribution.jpg' },
       { id: '9', title: 'NCC & Defense Drill Demonstration', category: 'Empowerment', imageUrl: '/assets/ncc_defense.jpg' },
-      { id: '10', title: 'Headmistress Paramita Giri (Bag) Portrait', category: 'Administration', imageUrl: '/assets/headmistress.jpg' },
-      { id: '11', title: 'Mahishadal Gayeswari Girls High School Crest Logo', category: 'Branding', imageUrl: '/assets/school_logo.jpg' },
+      { id: '10', title: 'Headmaster Headmaster Portrait', category: 'Administration', imageUrl: '/assets/Headmaster.jpg' },
+      { id: '11', title: 'Mahishadal Gayeswari Boys High School Crest Logo', category: 'Branding', imageUrl: '/assets/school_logo.jpg' },
     ];
   });
 
@@ -254,7 +254,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
       category: newStaffCategory,
       gender: newStaffGender,
       imageUrl: newStaffImageUrl || undefined,
-      bio: newStaffBio || `Welcome message from ${newStaffName}, ${newStaffDesignation} at Mahishadal Gayeswari Girls' High School (H.S.).`,
+      bio: newStaffBio || `Welcome message from ${newStaffName}, ${newStaffDesignation} at Mahishadal Raj High School (H.S.).`,
     };
 
     onAddFaculty(newStaff);
@@ -280,7 +280,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
     const encodedUri = encodeURI(csvContent);
     const link = document.createElement('a');
     link.setAttribute('href', encodedUri);
-    link.setAttribute('download', 'MGGHS_Admission_Inquiries_2026.csv');
+    link.setAttribute('download', 'MRHS_Admission_Inquiries_2026.csv');
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -300,7 +300,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             <img src="/assets/school_logo.jpg" alt="Logo" className="w-12 h-12 rounded-full border-2 border-[#9D174D] p-0.5 bg-white" />
             <div>
               <h1 className="font-serif font-extrabold text-2xl text-[#1E293B]">
-                Headmistress & Admin Control Console
+                Headmaster & Admin Control Console
               </h1>
               <p className="text-xs text-[#9D174D] font-bold uppercase tracking-wider">
                 Authenticated as: {user.username} ({user.role}) | localStorage Persisted
@@ -610,7 +610,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 >
                   <option value="wbbse">WBBSE Madhyamik</option>
                   <option value="wbchse">WBCHSE Higher Secondary</option>
-                  <option value="schemes">Kanyashree / Schemes</option>
+                  <option value="schemes">Oasis Scholarship / Schemes</option>
                   <option value="holiday">Holiday / Event</option>
                   <option value="tender">Tender / SMC</option>
                 </select>

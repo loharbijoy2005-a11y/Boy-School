@@ -13,7 +13,7 @@ export const StudentSuccess: React.FC = () => {
       rank: 'District 2nd Rank (Purba Medinipur)',
       stream: 'WBBSE Secondary Topper',
       imageUrl: '/assets/school_hero.jpg',
-      testimonial: '"The guidance from our science and math teachers at Mahishadal Gayeswari Girls\' High School gave me complete confidence to achieve 682/700 in Madhyamik."',
+      testimonial: '"The guidance from our science and math teachers at Mahishadal Gayeswari Boys\' High School gave me complete confidence to achieve 682/700 in Madhyamik."',
     },
     {
       id: '2',

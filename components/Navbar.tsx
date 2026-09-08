@@ -22,7 +22,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   const { t } = useLanguage();
 
   const defaultTickerText = marqueeText || 
-    "Admission Open for Classes V to XI (Session 2026-27) | WBBSE & WBCHSE 2nd Unit Test Schedule Published | Kanyashree K1 & K2 Verification Desk Active";
+    "Admission Open for Classes V to XI (Session 2026-27) | WBBSE & WBCHSE 2nd Unit Test Schedule Published | Oasis Scholarship K1 & K2 Verification Desk Active";
 
   return (
     <>
@@ -71,7 +71,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <span>WBBSE Madhyamik & WBCHSE HS Exam Routine 2026</span>
                 <span className="bg-rose-700 text-white text-[9px] font-bold px-1.5 py-0.2 rounded uppercase">NEW</span>
                 <span>&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;</span>
-                <span>Kanyashree K1 & K2 Verification Desk Active</span>
+                <span>Oasis Scholarship K1 & K2 Verification Desk Active</span>
                 <span className="bg-rose-700 text-white text-[9px] font-bold px-1.5 py-0.2 rounded uppercase">NEW</span>
               </span>
             </div>
@@ -88,7 +88,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <div className="w-20 h-20 rounded-full p-1 bg-gradient-to-r from-amber-400 via-rose-700 to-[#0F2E23] shrink-0 shadow-md border border-amber-300">
               <img
                 src="/assets/school_logo.jpg"
-                alt="MGGHS Crest Logo"
+                alt="MRHS Crest Logo"
                 className="w-full h-full object-contain rounded-full bg-white p-1"
               />
             </div>
@@ -196,7 +196,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               </a>
               <div className="absolute top-full left-0 w-64 bg-[#0A2018] border border-emerald-800 shadow-2xl rounded-b-xl hidden group-hover:block overflow-hidden z-50 text-xs font-bold capitalize tracking-normal">
                 <a href="#desk" className="block px-4 py-2.5 hover:bg-emerald-900 text-slate-200 hover:text-amber-300 border-b border-emerald-900/60">School Managing Committee (SMC)</a>
-                <a href="#desk" className="block px-4 py-2.5 hover:bg-emerald-900 text-slate-200 hover:text-amber-300 border-b border-emerald-900/60">Headmistress's Desk (Paramita Giri (Bag))</a>
+                <a href="#desk" className="block px-4 py-2.5 hover:bg-emerald-900 text-slate-200 hover:text-amber-300 border-b border-emerald-900/60">Headmaster's Desk (Headmaster)</a>
                 <a href="#desk" className="block px-4 py-2.5 hover:bg-emerald-900 text-slate-200 hover:text-amber-300 border-b border-emerald-900/60">Office & Accounts Administration</a>
                 <a href="#desk" className="block px-4 py-2.5 hover:bg-emerald-900 text-slate-200 hover:text-amber-300 border-b border-emerald-900/60">Central Library Administration</a>
                 <a href="#desk" className="block px-4 py-2.5 hover:bg-emerald-900 text-slate-200 hover:text-amber-300">Non-Teaching & Support Staff</a>
@@ -252,8 +252,8 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <ChevronDown className="w-3 h-3 text-amber-400" />
               </a>
               <div className="absolute top-full left-0 w-64 bg-[#0A2018] border border-emerald-800 shadow-2xl rounded-b-xl hidden group-hover:block overflow-hidden z-50 text-xs font-bold capitalize tracking-normal">
-                <a href="#seminars" className="block px-4 py-2.5 hover:bg-emerald-900 text-slate-200 hover:text-amber-300 border-b border-emerald-900/60">Kanyashree Club & Eco Club</a>
-                <a href="#seminars" className="block px-4 py-2.5 hover:bg-emerald-900 text-slate-200 hover:text-amber-300 border-b border-emerald-900/60">NCC Girls Wing Battalion</a>
+                <a href="#seminars" className="block px-4 py-2.5 hover:bg-emerald-900 text-slate-200 hover:text-amber-300 border-b border-emerald-900/60">Oasis Scholarship Club & Eco Club</a>
+                <a href="#seminars" className="block px-4 py-2.5 hover:bg-emerald-900 text-slate-200 hover:text-amber-300 border-b border-emerald-900/60">NCC Boys Wing Battalion</a>
                 <a href="#seminars" className="block px-4 py-2.5 hover:bg-emerald-900 text-slate-200 hover:text-amber-300 border-b border-emerald-900/60">Annual Patrika ("Gayeswari Arghya")</a>
                 <a href="#seminars" className="block px-4 py-2.5 hover:bg-emerald-900 text-slate-200 hover:text-amber-300">Saraswati Puja & Cultural Competitions</a>
               </div>
@@ -321,7 +321,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <a href="#desk" onClick={() => setMobileMenuOpen(false)} className="block py-2 border-b border-emerald-900/60 hover:text-amber-300">ADMINISTRATION & FACULTY</a>
             <a href="#academics" onClick={() => setMobileMenuOpen(false)} className="block py-2 border-b border-emerald-900/60 hover:text-amber-300">ACADEMICS (WBBSE & WBCHSE)</a>
             <a href="#notices" onClick={() => setMobileMenuOpen(false)} className="block py-2 border-b border-emerald-900/60 hover:text-amber-300">NOTICE BOARD HUB</a>
-            <a href="#welfare" onClick={() => setMobileMenuOpen(false)} className="block py-2 border-b border-emerald-900/60 hover:text-amber-300">KANYASHREE & GOVT SCHEMES</a>
+            <a href="#welfare" onClick={() => setMobileMenuOpen(false)} className="block py-2 border-b border-emerald-900/60 hover:text-amber-300">Oasis Scholarship & GOVT SCHEMES</a>
             <a href="#facilities" onClick={() => setMobileMenuOpen(false)} className="block py-2 border-b border-emerald-900/60 hover:text-amber-300">CAMPUS FACILITIES</a>
             <a href="#gallery" onClick={() => setMobileMenuOpen(false)} className="block py-2 border-b border-emerald-900/60 hover:text-amber-300">PHOTO GALLERY</a>
             <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="block py-2 hover:text-amber-300">CONTACT US</a>

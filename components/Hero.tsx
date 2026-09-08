@@ -25,14 +25,14 @@ export const Hero: React.FC<HeroProps> = ({
       id: '1',
       badge: '🏆 SCHOOL ACHIEVEMENTS & SPORTS',
       title: 'STUDENTS BRING HOME THE TROPHY',
-      subtitle: "Our girls celebrate with faculty and Headmistress Paramita Giri (Bag) after a hard-fought district championship win.",
+      subtitle: "Our boys celebrate with faculty and Headmaster Headmaster after a hard-fought district championship win.",
       url: '/assets/sports_day.jpg',
     },
     {
       id: '2',
       badge: '🏛️ HERITAGE SCHOOL CAMPUS (ESTD 1945)',
       title: 'HISTORIC MAIN BUILDING & ASSEMBLY GROUND',
-      subtitle: "Over 2,200+ female students gather daily for morning prayers and value education in our historic campus.",
+      subtitle: "Over 2,200+ students gather daily for morning prayers and value education in our historic campus.",
       url: '/assets/hero_campus.jpg',
     },
     {
@@ -46,7 +46,7 @@ export const Hero: React.FC<HeroProps> = ({
       id: '4',
       badge: '💻 ICT COMPUTER EDUCATION HUB',
       title: 'DIGITAL SMART CLASSROOMS & 30+ PCs',
-      subtitle: "Empowering female students with computer literacy, IT/ITeS skill courses, and e-learning facilities.",
+      subtitle: "Empowering students with computer literacy, IT/ITeS skill courses, and e-learning facilities.",
       url: '/assets/library_smartclass.jpg',
     },
   ];
@@ -90,10 +90,10 @@ export const Hero: React.FC<HeroProps> = ({
     },
     {
       id: '3',
-      title: 'Kanyashree K1 & K2 Grant Disbursement Verification Helpdesk Active',
+      title: 'Oasis Scholarship K1 & K2 Grant Disbursement Verification Helpdesk Active',
       category: 'schemes',
       publishDate: '18 AUG',
-      pdfUrl: '/notices/kanyashree-grant-2026.pdf',
+      pdfUrl: '/notices/Oasis Scholarship-grant-2026.pdf',
       isNew: true,
       fileSize: '190 KB',
       description: 'Eligible girl students (13-19 years) must submit Bank A/C passbook copy and Aadhaar verification at office.',
@@ -139,7 +139,7 @@ export const Hero: React.FC<HeroProps> = ({
           {/* Top Slide Counter Badge */}
           <div className="relative z-10 p-4 flex justify-between items-center">
             <span className="bg-[#0F2E23]/90 text-amber-300 text-xs font-bold px-3 py-1 rounded-full border border-amber-400/40 shadow-sm">
-              Mahishadal Gayeswari Girls' High School (H.S.)
+              Mahishadal Raj High School (H.S.)
             </span>
             <span className="bg-slate-950/80 backdrop-blur-md text-white font-mono text-xs font-extrabold px-3 py-1 rounded-full border border-slate-700">
               0{currentSlide + 1} / 0{campusPhotos.length}

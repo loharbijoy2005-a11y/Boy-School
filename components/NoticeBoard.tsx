@@ -33,13 +33,13 @@ export const NoticeBoard: React.FC<NoticeBoardProps> = ({ onOpenPdfModal }) => {
     },
     {
       id: '3',
-      title: 'Kanyashree K1 & K2 Application Renewal Notice',
+      title: 'Oasis Scholarship K1 & K2 Application Renewal Notice',
       category: 'schemes',
       publishDate: '28 Aug 2026',
-      pdfUrl: '/notices/kanyashree-renewal-2026.pdf',
+      pdfUrl: '/notices/Oasis Scholarship-renewal-2026.pdf',
       isNew: false,
       fileSize: '190 KB',
-      description: 'Eligible female students born between 01-04-2008 and 31-03-2009 must submit bank passbook & Aadhaar copies to the office desk.',
+      description: 'Eligible students born between 01-04-2008 and 31-03-2009 must submit bank passbook & Aadhaar copies to the office desk.',
     },
     {
       id: '4',

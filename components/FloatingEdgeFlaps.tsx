@@ -69,7 +69,7 @@ export const FloatingEdgeFlaps: React.FC = () => {
             </div>
 
             <p className="text-xs text-slate-700 leading-relaxed bg-white p-4 rounded-2xl border border-[#DFD7C7]">
-              The annual school magazine featuring poems, short stories, scientific essays, artwork, and historical research papers authored by female students and faculty of Mahishadal Gayeswari Girls' High School (H.S.).
+              The annual school magazine featuring poems, short stories, scientific essays, artwork, and historical research papers authored by students and faculty of Mahishadal Raj High School (H.S.).
             </p>
 
             <div className="grid grid-cols-2 gap-3 text-xs">
@@ -119,7 +119,7 @@ export const FloatingEdgeFlaps: React.FC = () => {
                   Key Institutional Metrics
                 </span>
                 <h3 className="font-serif font-extrabold text-2xl text-[#292524]">
-                  Mahishadal Gayeswari Girls' High School (H.S.)
+                  Mahishadal Raj High School (H.S.)
                 </h3>
               </div>
             </div>
@@ -128,7 +128,7 @@ export const FloatingEdgeFlaps: React.FC = () => {
               <div className="bg-white p-4 rounded-2xl border border-[#DFD7C7] text-center space-y-1">
                 <Users className="w-6 h-6 text-[#C58B24] mx-auto" />
                 <p className="font-extrabold text-2xl text-[#292524]">1,850+</p>
-                <p className="text-[11px] text-slate-600 font-bold uppercase">Enrolled Girls</p>
+                <p className="text-[11px] text-slate-600 font-bold uppercase">Enrolled Boys</p>
               </div>
 
               <div className="bg-white p-4 rounded-2xl border border-[#DFD7C7] text-center space-y-1">
@@ -148,7 +148,7 @@ export const FloatingEdgeFlaps: React.FC = () => {
               <h4 className="font-bold text-[#C58B24] uppercase">Government Accreditation & Codes:</h4>
               <div className="grid grid-cols-2 gap-2 text-slate-700">
                 <p>• UDISE Code: <span className="text-[#292524] font-bold">19190806002</span></p>
-                <p>• Banglar Shiksha ID: <span className="text-[#292524] font-bold">WB-1945-MGGHS</span></p>
+                <p>• Banglar Shiksha ID: <span className="text-[#292524] font-bold">WB-1945-MRHS</span></p>
                 <p>• WBBSE Secondary Index: <span className="text-[#292524] font-bold">E1-042</span></p>
                 <p>• WBCHSE Higher Secondary: <span className="text-[#292524] font-bold">105084</span></p>
               </div>

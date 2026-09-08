@@ -18,9 +18,9 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAdminLoginModal }) => {
           {/* Brand Column */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <img src="/assets/school_logo.jpg" alt="MGGHS Logo" className="w-10 h-10 rounded-full border border-[#C58B24] p-0.5 bg-white shadow-xs" />
+              <img src="/assets/school_logo.jpg" alt="MRHS Logo" className="w-10 h-10 rounded-full border border-[#C58B24] p-0.5 bg-white shadow-xs" />
               <h3 className="font-serif font-extrabold text-white text-base leading-tight">
-                Mahishadal Gayeswari Girls' High School (H.S.)
+                Mahishadal Raj High School (H.S.)
               </h3>
             </div>
             <p className="text-xs leading-relaxed text-slate-400">
@@ -67,8 +67,8 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAdminLoginModal }) => {
                 </a>
               </li>
               <li>
-                <a href="https://wbkanyashree.gov.in" target="_blank" rel="noreferrer" className="hover:text-amber-400 transition-colors flex items-center gap-1.5">
-                  <span>Kanyashree Prakalpa Portal</span>
+                <a href="https://wbOasis Scholarship.gov.in" target="_blank" rel="noreferrer" className="hover:text-amber-400 transition-colors flex items-center gap-1.5">
+                  <span>Oasis Scholarship Prakalpa Portal</span>
                   <ExternalLink className="w-3 h-3 text-slate-500" />
                 </a>
               </li>

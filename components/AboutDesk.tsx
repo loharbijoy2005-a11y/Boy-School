@@ -22,7 +22,7 @@ export const AboutDesk: React.FC<AboutDeskProps> = ({ facultyList }) => {
     return matchesCategory && matchesDept;
   });
 
-  const headmistress = facultyList.find(f => f.designation.toLowerCase().includes('headmistress')) || facultyList[0];
+  const Headmaster = facultyList.find(f => f.designation.toLowerCase().includes('Headmaster')) || facultyList[0];
 
   return (
     <section id="desk" className="py-20 bg-[#F5F1EA] text-[#292524] relative border-b border-[#DFD7C7]">
@@ -38,7 +38,7 @@ export const AboutDesk: React.FC<AboutDeskProps> = ({ facultyList }) => {
               School Administration & Executive Desk
             </h2>
             <p className="text-xs text-slate-600">
-              Meet the leadership team and administrative departments guiding Mahishadal Gayeswari Girls' High School (H.S.).
+              Meet the leadership team and administrative departments guiding Mahishadal Raj High School (H.S.).
             </p>
           </div>
 
@@ -47,7 +47,7 @@ export const AboutDesk: React.FC<AboutDeskProps> = ({ facultyList }) => {
             {/* Left Navigation Panel (Split-View Interactive Tabs) */}
             <div className="lg:col-span-4 bg-[#FAF7F0] p-4 rounded-3xl border border-[#DFD7C7] space-y-2 shadow-xs">
               {[
-                { id: 'hm', label: "Headmistress's Desk", icon: ShieldCheck, sub: 'Principal Executive & Academic Head' },
+                { id: 'hm', label: "Headmaster's Desk", icon: ShieldCheck, sub: 'Principal Executive & Academic Head' },
                 { id: 'smc', label: 'School Managing Committee (SMC)', icon: Building2, sub: 'Government Nominated Governing Body' },
                 { id: 'office', label: 'Office Administration', icon: Briefcase, sub: 'Banglar Shiksha & Accounts Wing' },
                 { id: 'library', label: 'School Library Staff', icon: BookMarked, sub: '12,000+ Books & Digital Archives' },
@@ -74,7 +74,7 @@ export const AboutDesk: React.FC<AboutDeskProps> = ({ facultyList }) => {
               })}
             </div>
 
-            {/* Right Active Card Display (Headmistress Frame in Gold Trim) */}
+            {/* Right Active Card Display (Headmaster Frame in Gold Trim) */}
             <div className="lg:col-span-8 bg-white p-8 rounded-3xl border border-[#DFD7C7] shadow-md relative space-y-6">
               
               {activeAdminTab === 'hm' && (
@@ -84,8 +84,8 @@ export const AboutDesk: React.FC<AboutDeskProps> = ({ facultyList }) => {
                     {/* Gold-Trimmed Portrait Frame */}
                     <div className="w-36 h-36 rounded-full p-1 bg-gradient-to-r from-[#C58B24] to-[#701A1E] shrink-0 shadow-md border-2 border-[#C58B24]">
                       <img
-                        src={headmistress.imageUrl || "/assets/headmistress.jpg"}
-                        alt={headmistress.name}
+                        src={Headmaster.imageUrl || "/assets/Headmaster.jpg"}
+                        alt={Headmaster.name}
                         className="w-full h-full object-cover rounded-full border-2 border-white"
                       />
                     </div>
@@ -93,10 +93,10 @@ export const AboutDesk: React.FC<AboutDeskProps> = ({ facultyList }) => {
                     <div className="space-y-2 text-center sm:text-left">
                       <div className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-emerald-100 text-[#1B4332] font-bold text-xs border border-emerald-300">
                         <CheckCircle2 className="w-3.5 h-3.5 text-[#1B4332]" />
-                        <span>Verified Headmistress Desk</span>
+                        <span>Verified Headmaster Desk</span>
                       </div>
-                      <h3 className="font-serif font-extrabold text-2xl md:text-3xl text-[#292524]">{headmistress.name}</h3>
-                      <p className="text-[#C58B24] font-extrabold text-xs uppercase">{headmistress.designation}, {headmistress.qualification}</p>
+                      <h3 className="font-serif font-extrabold text-2xl md:text-3xl text-[#292524]">{Headmaster.name}</h3>
+                      <p className="text-[#C58B24] font-extrabold text-xs uppercase">{Headmaster.designation}, {Headmaster.qualification}</p>
                       
                       {/* Core Values Pills */}
                       <div className="flex flex-wrap gap-2 pt-2 justify-center sm:justify-start">
@@ -112,13 +112,13 @@ export const AboutDesk: React.FC<AboutDeskProps> = ({ facultyList }) => {
                   <div className="space-y-3 bg-[#FAF7F0] p-5 rounded-2xl border border-[#DFD7C7]">
                     <Quote className="w-8 h-8 text-[#701A1E]/30 mb-1" />
                     <p className="text-slate-800 text-sm leading-relaxed italic font-medium">
-                      "{headmistress.bio || "Welcome to Mahishadal Gayeswari Girls' High School (H.S.). Since 1945, our school has been dedicated to moulding young girls into confident, moral, and educated citizens."}"
+                      "{Headmaster.bio || "Welcome to Mahishadal Raj High School (H.S.). Since 1945, our school has been dedicated to moulding young boys into confident, moral, and educated citizens."}"
                     </p>
                     
                     {/* Signature Line Placeholder */}
                     <div className="pt-3 border-t border-[#DFD7C7] flex justify-between items-center text-xs text-slate-600">
-                      <span>Mahishadal Gayeswari Girls' High School (H.S.)</span>
-                      <span className="font-serif italic text-sm text-[#701A1E] font-bold">Paramita Giri (Bag)</span>
+                      <span>Mahishadal Raj High School (H.S.)</span>
+                      <span className="font-serif italic text-sm text-[#701A1E] font-bold">Headmaster</span>
                     </div>
                   </div>
                 </div>
@@ -140,7 +140,7 @@ export const AboutDesk: React.FC<AboutDeskProps> = ({ facultyList }) => {
                     </div>
                     <div className="bg-[#FAF7F0] p-4 rounded-xl border border-[#DFD7C7]">
                       <p className="font-bold text-[#292524]">Member Secretary</p>
-                      <p className="text-slate-600 text-[11px]">Paramita Giri (Bag) (Headmistress)</p>
+                      <p className="text-slate-600 text-[11px]">Headmaster (Headmaster)</p>
                     </div>
                   </div>
                 </div>
@@ -153,7 +153,7 @@ export const AboutDesk: React.FC<AboutDeskProps> = ({ facultyList }) => {
                     <p className="text-xs text-[#C58B24] font-bold">Banglar Shiksha Nodal Desk & Clerical Services</p>
                   </div>
                   <p className="text-xs text-slate-700 leading-relaxed">
-                    Responsible for student registration, Banglar Shiksha e-portal data entry, Kanyashree K1/K2 scholarship application processing, marksheets, and leaving certificate issuance.
+                    Responsible for student registration, Banglar Shiksha e-portal data entry, Oasis Scholarship K1/K2 scholarship application processing, marksheets, and leaving certificate issuance.
                   </p>
                   <div className="bg-[#FAF7F0] p-4 rounded-xl border border-[#DFD7C7] text-xs space-y-2">
                     <p className="font-bold text-[#292524]">Office Helpdesk Timings:</p>
@@ -182,7 +182,7 @@ export const AboutDesk: React.FC<AboutDeskProps> = ({ facultyList }) => {
                     <p className="text-xs text-[#C58B24] font-bold">Laboratory Attendants, Night Guards & Maintenance Team</p>
                   </div>
                   <p className="text-xs text-slate-700 leading-relaxed">
-                    Ensuring 24/7 campus security, CCTV surveillance, science laboratory safety, mid-day meal hygiene, and clean eco-friendly environment for our female students.
+                    Ensuring 24/7 campus security, CCTV surveillance, science laboratory safety, mid-day meal hygiene, and clean eco-friendly environment for our students.
                   </p>
                 </div>
               )}
@@ -387,7 +387,7 @@ export const AboutDesk: React.FC<AboutDeskProps> = ({ facultyList }) => {
                 Welcome Message & Staff Profile
               </h4>
               <p className="text-xs text-slate-700 leading-relaxed italic bg-white p-4 rounded-xl border border-[#DFD7C7]">
-                "{selectedStaff.bio || `Welcome to Mahishadal Gayeswari Girls' High School (H.S.). As part of ${selectedStaff.department}, I am dedicated to serving our students and institution with excellence, guidance, and commitment since 1945.`}"
+                "{selectedStaff.bio || `Welcome to Mahishadal Raj High School (H.S.). As part of ${selectedStaff.department}, I am dedicated to serving our students and institution with excellence, guidance, and commitment since 1945.`}"
               </p>
             </div>
 

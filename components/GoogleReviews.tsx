@@ -11,7 +11,7 @@ export const GoogleReviews: React.FC = () => {
       role: 'Parent',
       rating: 5,
       date: '2 weeks ago',
-      comment: 'Best government-sponsored girls high school in Mahishadal region. Disciplined environment, dedicated Sirs & Madams, and excellent Madhyamik exam results.',
+      comment: 'Best government-sponsored boys high school in Mahishadal region. Disciplined environment, dedicated Sirs & Madams, and excellent Madhyamik exam results.',
       authorAvatar: 'S',
     },
     {
@@ -20,7 +20,7 @@ export const GoogleReviews: React.FC = () => {
       role: 'Alumni',
       rating: 5,
       date: '1 month ago',
-      comment: 'Proud ex-student of MGGHS (2018 Batch). The foundation I received in Physics and Chemistry labs helped me clear NEET and become a doctor today.',
+      comment: 'Proud ex-student of MRHS (2018 Batch). The foundation I received in Physics and Chemistry labs helped me clear NEET and become a doctor today.',
       authorAvatar: 'A',
     },
     {
@@ -29,7 +29,7 @@ export const GoogleReviews: React.FC = () => {
       role: 'Parent',
       rating: 4,
       date: '3 months ago',
-      comment: 'Kanyashree Prakalpa grant disbursement and Sabooj Sathi cycle distribution are very well managed by the office staff.',
+      comment: 'Oasis Scholarship Prakalpa grant disbursement and Sabooj Sathi cycle distribution are very well managed by the office staff.',
       authorAvatar: 'R',
     },
   ];
@@ -47,7 +47,7 @@ export const GoogleReviews: React.FC = () => {
             Verified Parent & Alumni Reviews
           </h2>
           <p className="text-xs text-slate-600">
-            Real feedback from guardians, students, and distinguished ex-students of Mahishadal Gayeswari Girls' High School (H.S.).
+            Real feedback from guardians, students, and distinguished ex-students of Mahishadal Raj High School (H.S.).
           </p>
         </div>
 

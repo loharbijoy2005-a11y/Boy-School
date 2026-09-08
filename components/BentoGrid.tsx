@@ -41,12 +41,12 @@ export const BentoGrid: React.FC = () => {
       id: '6',
       title: 'Medical Sick Room & First Aid Cell',
       description: 'First-aid beds, emergency medicines, and regular health checkup camps by government medical officers.',
-      imageUrl: '/assets/headmistress.jpg',
+      imageUrl: '/assets/Headmaster.jpg',
     },
     {
       id: '7',
-      title: 'Girls Common Room & Indoor Games',
-      description: 'Relaxation lounge with carrom, chess, and table tennis facilities for female students during breaks.',
+      title: 'Boys Common Room & Indoor Games',
+      description: 'Relaxation lounge with carrom, chess, and table tennis facilities for students during breaks.',
       imageUrl: '/assets/sports_day.jpg',
     },
     {
@@ -64,8 +64,8 @@ export const BentoGrid: React.FC = () => {
     },
     {
       id: '10',
-      title: 'Kanyashree Karate Self-Defense Dojang',
-      description: 'Specialized martial arts studio training female students in self-defense and physical fitness.',
+      title: 'Oasis Scholarship Karate Self-Defense Dojang',
+      description: 'Specialized martial arts studio training students in self-defense and physical fitness.',
       imageUrl: '/assets/sports_day.jpg',
     },
     {
@@ -106,7 +106,7 @@ export const BentoGrid: React.FC = () => {
             Campus Facilities Grid (14+ Bento-Cards)
           </h2>
           <p className="text-xs text-slate-600">
-            Modern educational facilities engineered to nurture every female student's academic and personal growth.
+            Modern educational facilities engineered to nurture every student's academic and personal growth.
           </p>
         </div>
 
@@ -143,7 +143,7 @@ export const BentoGrid: React.FC = () => {
 
                 <div className="pt-2 border-t border-[#E8DFD0] text-[11px] text-[#047857] font-bold flex items-center justify-between">
                   <span>Active Infrastructure</span>
-                  <span>MGGHS Campus</span>
+                  <span>MRHS Campus</span>
                 </div>
               </div>
             </ScrollRevealCard>

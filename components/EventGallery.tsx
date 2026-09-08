@@ -18,7 +18,7 @@ export const EventGallery: React.FC<EventGalleryProps> = ({ galleryItems: propGa
   const defaultItems: GalleryItem[] = [
     { id: '1', title: 'Saraswati Puja Floral & Alpona Decoration', category: 'Cultural', imageUrl: '/assets/saraswati_puja.jpg' },
     { id: '2', title: 'Annual Athletic Sports Championship Meet', category: 'Sports', imageUrl: '/assets/sports_day.jpg' },
-    { id: '3', title: 'Kanyashree Karate Self-Defense Drill', category: 'Empowerment', imageUrl: '/assets/sports_day.jpg' },
+    { id: '3', title: 'Oasis Scholarship Karate Self-Defense Drill', category: 'Empowerment', imageUrl: '/assets/sports_day.jpg' },
     { id: '4', title: 'STEM Science & Robotics Exhibition', category: 'Academics', imageUrl: '/assets/science_exhibition.jpg' },
     { id: '5', title: 'Annual Academic Prize Distribution', category: 'Ceremony', imageUrl: '/assets/prize_distribution.jpg' },
     { id: '6', title: 'NCC & Defense Drill Demonstration', category: 'NCC', imageUrl: '/assets/ncc_defense.jpg' },

@@ -49,23 +49,23 @@ function HomePageInner() {
       const saved = localStorage.getItem('mgghs_marquee');
       if (saved) return saved;
     }
-    return "🚨 ONLINE ADMISSION OPEN FOR CLASS V TO XI (SESSION 2026-27) | WBBSE & WBCHSE 2ND UNIT TEST ROUTINE PUBLISHED | KANYASHREE K1 & K2 GRANT DESK ACTIVE";
+    return "🚨 ONLINE ADMISSION OPEN FOR CLASS V TO XI (SESSION 2026-27) | WBBSE & WBCHSE 2ND UNIT TEST ROUTINE PUBLISHED | Oasis Scholarship K1 & K2 GRANT DESK ACTIVE";
   });
 
   // Dynamic Faculty & Staff Roster State
   const [facultyList, setFacultyList] = useState<FacultyMember[]>([
     {
       id: '1',
-      name: 'Paramita Giri (Bag)',
-      designation: 'Headmistress',
+      name: 'Headmaster',
+      designation: 'Headmaster',
       qualification: 'M.A. (Bengali), B.Ed.',
       subject: 'Bengali Literature & School Admin',
       department: 'Languages',
       category: 'teaching',
       gender: 'Madam',
-      imageUrl: '/assets/headmistress.jpg',
-      bio: "Welcome to Mahishadal Gayeswari Girls' High School (H.S.). Since 1945, our school has been dedicated to moulding young girls into confident, moral, and educated citizens. Through state welfare programs like Kanyashree, Sabooj Sathi, ICT Computer lab, and dedicated faculty, we ensure a safe, supportive, and vibrant learning atmosphere for every girl child.",
-      email: 'headmistress@mgghs.edu.in',
+      imageUrl: '/assets/Headmaster.jpg',
+      bio: "Welcome to Mahishadal Raj High School (H.S.). Since 1945, our school has been dedicated to moulding young boys into confident, moral, and educated citizens. Through state welfare programs like Oasis Scholarship, Sabooj Sathi, ICT Computer lab, and dedicated faculty, we ensure a safe, supportive, and vibrant learning atmosphere for every student.",
+      email: 'Headmaster@mgghs.edu.in',
       phone: '+91 3228 240211',
     },
     {
@@ -200,7 +200,7 @@ function HomePageInner() {
       department: 'Social Sciences',
       category: 'teaching',
       gender: 'Madam',
-      bio: 'Educating female students on health, dietary science, hygiene, and community health.',
+      bio: 'Educating students on health, dietary science, hygiene, and community health.',
     },
 
     {
@@ -223,7 +223,7 @@ function HomePageInner() {
       department: 'IT & Sports',
       category: 'teaching',
       gender: 'Madam',
-      bio: 'Training girls in karate, athletics, yoga, and inter-school championship competitions.',
+      bio: 'Training boys in karate, athletics, yoga, and inter-school championship competitions.',
     },
 
     {
@@ -280,7 +280,7 @@ function HomePageInner() {
       department: 'Support & Security',
       category: 'support_group_d',
       gender: 'Sir',
-      bio: 'Ensuring 24/7 security, CCTV surveillance monitoring, and campus safety for our girls school.',
+      bio: 'Ensuring 24/7 security, CCTV surveillance monitoring, and campus safety for our boys school.',
     },
   ]);
 
@@ -415,7 +415,7 @@ function HomePageInner() {
               </button>
             </div>
             <div className="space-y-3 text-xs">
-              <p className="font-bold text-amber-400">MAHISHADAL GAYESWARI GIRLS' HIGH SCHOOL (H.S.)</p>
+              <p className="font-bold text-amber-400">MAHISHADAL GAYESWARI High School (H.S.)</p>
               <p className="text-slate-400">Category: {activePdfNotice.category.toUpperCase()} | Publish Date: {activePdfNotice.publishDate}</p>
               <p className="text-slate-300 leading-relaxed bg-slate-950 p-4 rounded-xl border border-slate-800">{activePdfNotice.description}</p>
               <div className="flex justify-end gap-3 pt-3">

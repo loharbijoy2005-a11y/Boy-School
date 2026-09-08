@@ -1,16 +1,16 @@
 /**
- * MAHISHADAL GAYESWARI GIRLS' HIGH SCHOOL (H.S.)
+ * MAHISHADAL GAYESWARI High School (H.S.)
  * Ultra-Modern Animation & JS Controller
  */
 
 // Bilingual Translation Dictionary
 const i18n = {
   en: {
-    schoolName: "Mahishadal Gayeswari Girls' High School (H.S.)",
-    schoolTagline: "Nurturing Knowledge, Discipline, and Girls' Empowerment Since 1945",
+    schoolName: "Mahishadal Raj High School (H.S.)",
+    schoolTagline: "Nurturing Knowledge, Discipline, and Boys' Empowerment Since 1945",
     phoneText: "+91 3228 240211",
     emailText: "mgghschool1945@gmail.com",
-    schoolId: "Banglar Shiksha ID: WB-1945-MGGHS",
+    schoolId: "Banglar Shiksha ID: WB-1945-MRHS",
     indexBadge: "WBBSE: E1-042 | WBCHSE: 105084",
     langToggle: "বাংলা",
     navHome: "Home",
@@ -22,57 +22,57 @@ const i18n = {
     navGallery: "Gallery",
     btnApply: "New Admission Inquiry",
     heroTitle: "Empowering Young Minds, Inspiring Excellence Since 1945",
-    heroDesc: "Mahishadal Gayeswari Girls' High School (H.S.) is a premier government-sponsored girls' high school in Mahishadal, Purba Medinipur. Affiliated to WBBSE and WBCHSE, we foster holistic academic brilliance, scientific temper, and leadership skills from Class V to Class XII.",
+    heroDesc: "Mahishadal Raj High School (H.S.) is a premier government-sponsored High School in Mahishadal, Purba Medinipur. Affiliated to WBBSE and WBCHSE, we foster holistic academic brilliance, scientific temper, and leadership skills from Class V to Class XII.",
     btnAdmission: "Online Admission 2026",
     btnExplore: "Explore Campus",
-    statClasses: "1000+ Girls Enrolled",
+    statClasses: "1000+ Boys Enrolled",
     statClassesSub: "Classes V to XII",
     statPass: "100% Madhyamik Pass",
     statPassSub: "WBBSE & WBCHSE Excellence",
     noticeHeaderTitle: "Live Notice & Examination Board",
     noticeHeaderSub: "Real-time updates regarding school exams, unit test routines, H.S. practicals, and holiday notifications.",
-    deskTitle: "Headmistress's Desk",
-    deskName: "Paramita Giri (Bag)",
-    deskRole: "Headmistress, M.A., B.Ed.",
-    deskMsg1: "Welcome to Mahishadal Gayeswari Girls' High School (H.S.). Since 1945, our school has been dedicated to moulding young girls into confident, moral, and educated citizens.",
-    deskMsg2: "Through government welfare programs like Kanyashree, Sabooj Sathi, ICT Computer lab, and dedicated faculty, we ensure a safe, supportive, and vibrant learning atmosphere for every girl child.",
+    deskTitle: "Headmaster's Desk",
+    deskName: "Headmaster",
+    deskRole: "Headmaster, M.A., B.Ed.",
+    deskMsg1: "Welcome to Mahishadal Raj High School (H.S.). Since 1945, our school has been dedicated to moulding young boys into confident, moral, and educated citizens.",
+    deskMsg2: "Through government welfare programs like Oasis Scholarship, Sabooj Sathi, ICT Computer lab, and dedicated faculty, we ensure a safe, supportive, and vibrant learning atmosphere for every student.",
     welfareTitle: "West Bengal Govt. Student Welfare Corner",
     welfareSub: "Direct guidance and application desk for state education welfare grants & scholarships.",
     btnSubmitInquiry: "Submit Parent Inquiry"
   },
   bn: {
-    schoolName: "মহিষাদল গায়েশ্বরী বালিকা উচ্চ বিদ্যালয় (উঃ মাঃ)",
+    schoolName: "মহিষাদল রাজ হাই স্কুল (উঃ মাঃ)",
     schoolTagline: "১৯৪৫ সাল থেকে জ্ঞান চর্চা, শৃঙ্খলা ও নারী শিক্ষার অগ্রদূত",
     phoneText: "+91 ৩২২৮ ২৪০২১১",
     emailText: "mgghschool1945@gmail.com",
-    schoolId: "বাংলার শিক্ষা আইডি: WB-1945-MGGHS",
+    schoolId: "বাংলার শিক্ষা আইডি: WB-1945-MRHS",
     indexBadge: "মধ্যশিক্ষা পর্ষদ: E1-042 | উচ্চ মাধ্যমিক: 105084",
     langToggle: "English",
     navHome: "মূল পাতা",
-    navAbout: "প্রধান শিক্ষিকার বার্তা",
+    navAbout: "প্রধান শিক্ষকর বার্তা",
     navAcademics: "পাঠ্যক্রম",
     navNotices: "নোটিশ বোর্ড",
     navSchemes: "সরকারি প্রকল্প",
     navFacilities: "সুযোগ-সুবিধা",
     navGallery: "গ্যালারি",
     btnApply: "অনলাইন ভর্তি তথ্য",
-    heroTitle: "১৯৪৫ সাল থেকে জ্ঞান চর্চা ও কন্যাদের সমৃদ্ধির পথপ্রদর্শক",
-    heroDesc: "মহিষাদল গায়েশ্বরী বালিকা উচ্চ বিদ্যালয় (উঃ মাঃ) পূর্ব মেদিনীপুরের এক ঐতিহ্যবাহী সরকারি সাহায্যপ্রাপ্ত বালিকা বিদ্যালয়। পঞ্চম থেকে দ্বাদশ শ্রেণী পর্যন্ত বিজ্ঞান, কলা ও বৃত্তিমূলক শিক্ষায় আমরা অঙ্গীকারবদ্ধ।",
+    heroTitle: "১৯৪৫ সাল থেকে জ্ঞান চর্চা ও ছাত্রদের সমৃদ্ধির পথপ্রদর্শক",
+    heroDesc: "মহিষাদল রাজ হাই স্কুল (উঃ মাঃ) পূর্ব মেদিনীপুরের এক ঐতিহ্যবাহী সরকারি সাহায্যপ্রাপ্ত বিদ্যালয়। পঞ্চম থেকে দ্বাদশ শ্রেণী পর্যন্ত বিজ্ঞান, কলা ও বৃত্তিমূলক শিক্ষায় আমরা অঙ্গীকারবদ্ধ।",
     btnAdmission: "অনলাইন ভর্তি ২০২৬",
     btnExplore: "বিদ্যালয় চত্বর দেখুন",
-    statClasses: "১০০০+ ছাত্রী নিবন্ধিত",
+    statClasses: "১০০০+ ছাত্র নিবন্ধিত",
     statClassesSub: "পঞ্চম থেকে দ্বাদশ শ্রেণী",
     statPass: "১০০% পাস সাফল্য",
     statPassSub: "মাধ্যমিক ও উচ্চ মাধ্যমিক",
     noticeHeaderTitle: "অফিসিয়াল নোটিশ ও পরীক্ষার সময়সূচী",
     noticeHeaderSub: "বিদ্যালয়ের ইউনিট টেস্ট, উচ্চ মাধ্যমিক প্রাক্টিক্যাল ও ছুটির তালিকা সংক্রান্ত আপডেট।",
-    deskTitle: "প্রধান শিক্ষিকার বার্তা",
-    deskName: "শ্রীমতী কল্যাণী মাইতি",
-    deskRole: "প্রধান শিক্ষিকা, এম.এ, বি.এড",
-    deskMsg1: "মহিষাদল গায়েশ্বরী বালিকা উচ্চ বিদ্যালয়ে সকলকে স্বাগত জানাচ্ছি। ১৯৪৫ সাল থেকে এই বিদ্যালয় কন্যা শিক্ষার মশাল বহন করে চলেছে।",
-    deskMsg2: "কন্যাশ্রী, সবুজ সাথী ও তরুণের স্বপ্ন প্রকল্পের সুবিধা পৌঁছে দিয়ে এবং আধুনিক আইসিটি ক্লাসের মাধ্যমে আমরা প্রতিটি ছাত্রীর ভবিষ্যৎ সুনিশ্চিত করছি।",
+    deskTitle: "প্রধান শিক্ষকর বার্তা",
+    deskName: "প্রধান শিক্ষক",
+    deskRole: "প্রধান শিক্ষক, এম.এ, বি.এড",
+    deskMsg1: "মহিষাদল রাজ হাই স্কুলে সকলকে স্বাগত জানাচ্ছি। ১৯৪৫ সাল থেকে এই বিদ্যালয় ছাত্র শিক্ষার মশাল বহন করে চলেছে।",
+    deskMsg2: "ছাত্রশ্রী, সবুজ সাথী ও তরুণের স্বপ্ন প্রকল্পের সুবিধা পৌঁছে দিয়ে এবং আধুনিক আইসিটি ক্লাসের মাধ্যমে আমরা প্রতিটি ছাত্রর ভবিষ্যৎ সুনিশ্চিত করছি।",
     welfareTitle: "পশ্চিমবঙ্গ সরকারের শিক্ষার্থী কল্যাণমূলক প্রকল্পসমূহ",
-    welfareSub: "কন্যাশ্রী, সবুজ সাথী, তরুণের স্বপ্ন ও অন্যান্য বৃত্তির নির্দেশিকা।",
+    welfareSub: "ছাত্রশ্রী, সবুজ সাথী, তরুণের স্বপ্ন ও অন্যান্য বৃত্তির নির্দেশিকা।",
     btnSubmitInquiry: "আবেদন জমা দিন"
   }
 };
@@ -224,7 +224,7 @@ function initFormHandler() {
       return;
     }
 
-    const refId = 'MGGHS-2026-' + Math.floor(1000 + Math.random() * 9000);
+    const refId = 'MRHS-2026-' + Math.floor(1000 + Math.random() * 9000);
 
     const modalBody = document.getElementById('confirmationModalBody');
     if (modalBody) {
@@ -254,20 +254,20 @@ function openWelfareModal(scheme) {
   const modalTitle = document.getElementById('noticePdfModalTitle');
   if (!modalBody || !modalTitle) return;
 
-  if (scheme === 'kanyashree') {
-    modalTitle.textContent = "Kanyashree Prakalpa (K1 & K2 Grants)";
+  if (scheme === 'Oasis Scholarship') {
+    modalTitle.textContent = "Oasis Scholarship Prakalpa (K1 & K2 Grants)";
     modalBody.innerHTML = `
       <div style="line-height: 1.7; color: #334155;">
-        <h4 style="color: #1E3A8A; font-size: 1.1rem; margin-bottom: 0.5rem;">West Bengal Kanyashree Scheme Details</h4>
-        <p><strong>Eligibility:</strong> Unmarried female students aged 13-18 enrolled in Classes VIII to XII.</p>
+        <h4 style="color: #1E3A8A; font-size: 1.1rem; margin-bottom: 0.5rem;">West Bengal Oasis Scholarship Scheme Details</h4>
+        <p><strong>Eligibility:</strong> Unmarried students aged 13-18 enrolled in Classes VIII to XII.</p>
         <br>
         <ul style="list-style: disc; padding-left: 1.5rem;">
           <li><strong>K1 Annual Stipend:</strong> ₹1,000 per year for students aged 13 to 18 years.</li>
           <li><strong>K2 One-Time Grant:</strong> ₹25,000 upon reaching 18 years of age and continuing studies.</li>
         </ul>
         <br>
-        <a href="https://wbkanyashree.gov.in" target="_blank" class="btn btn-rose" style="display: inline-flex; width: 100%;">
-          <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Kanyashree Official Portal
+        <a href="https://wbOasis Scholarship.gov.in" target="_blank" class="btn btn-rose" style="display: inline-flex; width: 100%;">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Oasis Scholarship Official Portal
         </a>
       </div>
     `;
@@ -276,7 +276,7 @@ function openWelfareModal(scheme) {
     modalBody.innerHTML = `
       <div style="line-height: 1.7; color: #334155;">
         <h4 style="color: #1E3A8A; font-size: 1.1rem; margin-bottom: 0.5rem;">Bicycle Distribution Scheme for School Students</h4>
-        <p>Under Sabooj Sathi scheme, free bicycles are provided to female students studying in Class IX to XII to facilitate easy commuting to school.</p>
+        <p>Under Sabooj Sathi scheme, free bicycles are provided to students studying in Class IX to XII to facilitate easy commuting to school.</p>
       </div>
     `;
   } else if (scheme === 'taruner_swapna') {
@@ -302,8 +302,8 @@ function openNoticePdfModal(title, date, category) {
     <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 2rem;">
       <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #F43F5E; padding-bottom: 1rem; margin-bottom: 1.5rem;">
         <div>
-          <h4 style="color: #1E3A8A; font-size: 1.1rem; margin-bottom: 0.2rem;">MAHISHADAL GAYESWARI GIRLS' HIGH SCHOOL (H.S.)</h4>
-          <span style="font-size: 0.8rem; color: #64748B;">Circular Ref: MGGHS/CIRCULAR/2026/N-${Math.floor(100+Math.random()*900)}</span>
+          <h4 style="color: #1E3A8A; font-size: 1.1rem; margin-bottom: 0.2rem;">MAHISHADAL GAYESWARI High School (H.S.)</h4>
+          <span style="font-size: 0.8rem; color: #64748B;">Circular Ref: MRHS/CIRCULAR/2026/N-${Math.floor(100+Math.random()*900)}</span>
         </div>
         <span style="background: #FFE4E6; color: #F43F5E; font-weight: 700; font-size: 0.8rem; padding: 0.3rem 0.8rem; border-radius: 20px;">${date}</span>
       </div>
@@ -311,7 +311,7 @@ function openNoticePdfModal(title, date, category) {
       <div style="color: #334155; line-height: 1.7; margin-bottom: 2rem;">
         <p><strong>SUBJECT: ${title.toUpperCase()}</strong></p>
         <br>
-        <p>This is an official administrative notice issued by order of Headmistress Paramita Giri (Bag) and the School Managing Committee of Mahishadal Gayeswari Girls' High School (H.S.).</p>
+        <p>This is an official administrative notice issued by order of Headmaster Headmaster and the School Managing Committee of Mahishadal Raj High School (H.S.).</p>
       </div>
 
       <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #E2E8F0; padding-top: 1.2rem;">

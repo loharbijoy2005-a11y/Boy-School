@@ -27,7 +27,7 @@ export const AdmissionModal: React.FC<AdmissionModalProps> = ({ isOpen, onClose 
       alert('Please fill in required fields.');
       return;
     }
-    const refCode = 'MGGHS-2026-' + Math.floor(1000 + Math.random() * 9000);
+    const refCode = 'MRHS-2026-' + Math.floor(1000 + Math.random() * 9000);
     setSubmittedRef(refCode);
   };
 

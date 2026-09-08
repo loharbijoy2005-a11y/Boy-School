@@ -37,7 +37,7 @@ export const ContactSection: React.FC = () => {
             Dual Query & Geolocation Office Desk
           </h2>
           <p className="text-xs text-slate-600">
-            Contact the Headmistress office, inquiry helpdesk, or visit our Mahishadal campus.
+            Contact the Headmaster office, inquiry helpdesk, or visit our Mahishadal campus.
           </p>
         </div>
 
@@ -50,7 +50,7 @@ export const ContactSection: React.FC = () => {
                 School Address & Helpdesk
               </h3>
               <p className="text-xs text-[#B45309] mt-1 font-bold">
-                Mahishadal Gayeswari Girls' High School (H.S.)
+                Mahishadal Raj High School (H.S.)
               </p>
             </div>
 
@@ -104,7 +104,7 @@ export const ContactSection: React.FC = () => {
               <div className="h-44 rounded-2xl overflow-hidden border border-[#E8DFD0] relative bg-slate-100 flex items-center justify-center shadow-xs">
                 <iframe
                   title="Mahishadal Campus Location Map"
-                  src="https://maps.google.com/maps?q=Mahishadal+Girls+High+School+Purba+Medinipur&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=Mahishadal+Boys+High+School+Purba+Medinipur&t=&z=14&ie=UTF8&iwloc=&output=embed"
                   className="w-full h-full border-0 opacity-90"
                   loading="lazy"
                 ></iframe>
@@ -127,7 +127,7 @@ export const ContactSection: React.FC = () => {
             {isSubmitted && (
               <div className="bg-emerald-50 border border-emerald-300 text-[#047857] p-4 rounded-2xl text-xs flex items-center gap-2 font-bold">
                 <CheckCircle2 className="w-5 h-5 shrink-0 text-[#047857]" />
-                <span>Thank you! Your message has been sent to the Headmistress & Office Desk. We will contact you shortly.</span>
+                <span>Thank you! Your message has been sent to the Headmaster & Office Desk. We will contact you shortly.</span>
               </div>
             )}
 

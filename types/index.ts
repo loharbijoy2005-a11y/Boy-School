@@ -1,5 +1,5 @@
 /**
- * MAHISHADAL GAYESWARI GIRLS' HIGH SCHOOL (H.S.)
+ * MAHISHADAL GAYESWARI High School (H.S.)
  * 10x Ultra-Luxurious Educational Portal TypeScript Definitions
  */
 
@@ -135,7 +135,7 @@ export interface CulturalEvent {
 
 export interface AdminUser {
   username: string;
-  role: 'headmistress' | 'office_clerk';
+  role: 'Headmaster' | 'office_clerk';
   token: string;
 }
 

@@ -39,7 +39,7 @@ export const AcademicSpectrum: React.FC = () => {
       title: 'Vocational & ICT Skill Certification Courses',
       wing: 'Vocational',
       duration: '1 Year Certification',
-      description: 'State government sponsored skill development and computer literacy programs for empowering female students with job-ready technical skills.',
+      description: 'State government sponsored skill development and computer literacy programs for empowering students with job-ready technical skills.',
       subjects: ['Information Technology & Computer Application', 'Apparel & Tailoring Design', 'Karate & Self-Defense Certification', 'Health Care & Nursing Basics'],
       outcomes: 'Govt. Skill Certification and self-employment empowerment.',
     },

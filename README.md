@@ -1,12 +1,12 @@
-# 🏫 Mahishadal Gayeswari Girls' High School (H.S.)
+# 🏫 Mahishadal Raj High School (H.S.)
 
-Official web portal and digital management platform for **Mahishadal Gayeswari Girls' High School (H.S.)**, established in 1945. This web application provides a comprehensive digital experience for students, parents, faculty, and administrative staff.
+Official web portal and digital management platform for **Mahishadal Raj High School (H.S.)**, established in 1945. This web application provides a comprehensive digital experience for students, parents, faculty, and administrative staff.
 
 ---
 
 ## 🔗 Quick Links
 
-- **🌐 Live Web Portal:** [https://mahishadal-girls-school.vercel.app](https://mahishadal-girls-school.vercel.app)
+- **🌐 Live Web Portal:** [https://mahishadal-boys-school.vercel.app](https://mahishadal-boys-school.vercel.app)
 - **🐙 GitHub Repository:** [https://github.com/loharbijoy2005-a11y/School](https://github.com/loharbijoy2005-a11y/School)
 
 ---
@@ -19,7 +19,7 @@ Official web portal and digital management platform for **Mahishadal Gayeswari G
 - 📋 **Tabbed Notice Board & PDF Viewer:** Categorized announcements (Madhyamik, Higher Secondary, Grants, Holidays) with integrated PDF preview & download simulation.
 - 🔐 **Admin Management Dashboard:** Secure authentication portal allowing administrators to update announcements, manage faculty rosters, and post updates.
 - 🎓 **Online Admission Portal:** Interactive modal form supporting applications for Class V to Class XI (WBBSE & WBCHSE).
-- 🎁 **Govt Welfare Schemes Corner:** Dedicated information desk for *Kanyashree (K1/K2/K3)*, *Sabooj Sathi*, *Aikyashree*, *Swami Vivekananda Merit-cum-Means (SVMCM)*, and *Taruner Swapna*.
+- 🎁 **Govt Welfare Schemes Corner:** Dedicated information desk for *Oasis Scholarship (K1/K2/K3)*, *Sabooj Sathi*, *Aikyashree*, *Swami Vivekananda Merit-cum-Means (SVMCM)*, and *Taruner Swapna*.
 - 🍱 **Bento-Grid Campus Facilities:** Interactive visual showcase of Science Labs, Smart Classrooms, Library, ICT Computer Lab, Sports Grounds, and Hostel.
 - 💬 **Google Reviews & Feedback Widget:** Authentic community feedback and ratings display.
 - 🗺️ **Interactive Geo-Location & Contact Desk:** Location mapping, direct contact form, and emergency contacts.
@@ -93,7 +93,7 @@ School/
 ├── components/           # Reusable UI components
 │   ├── Navbar.tsx        # Top navigation & language switcher
 │   ├── HeroNoticeOverlay.tsx # Hero banner slider & notice board
-│   ├── AboutDesk.tsx     # Headmistress message & faculty roster
+│   ├── AboutDesk.tsx     # Headmaster message & faculty roster
 │   ├── AdminDashboard.tsx# Administrative control panel
 │   ├── SchemesCorner.tsx # WB Government scholarship cards
 │   ├── ContactSection.tsx# Contact form & location map
@@ -124,4 +124,4 @@ vercel
 
 ## 📄 License
 
-This project is maintained for **Mahishadal Gayeswari Girls' High School (H.S.)**. All rights reserved.
+This project is maintained for **Mahishadal Raj High School (H.S.)**. All rights reserved.
